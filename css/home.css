@@ -1,0 +1,169 @@
+/* Resets default margin and padding */
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+.container{
+    width:100%;
+    padding:0 25px;
+    margin:0 auto;
+}    
+/* yo garesi sabai content center ma huncha */
+
+@media (min-width:576px){
+    .container{
+        max-width:540px;
+    }
+}
+
+@media (min-width:768px){
+    .container{
+        max-width:720px;
+    }
+}
+
+@media (min-width:992px){
+    .container{
+        max-width:960px;
+    }
+}
+
+@media (min-width:1200px){
+    .container{
+        max-width:1152x;
+    }
+}
+
+header.topbar{
+    /* background: #232b38  ; */
+    background: #353839;
+    color: #FEFEFE;
+    padding: 0.75rem 0;
+}
+
+header.topbar .icons a{
+    margin-right:0.6rem;
+}
+
+
+header.topbar .auth > div a{
+    color:#FEFEFE;
+    text-decoration:none;
+}
+
+header.topbar .container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.topbar .container .auth{
+    display:flex;
+}
+
+.header.topbar .auth .divider{
+    padding:0 1rem;
+}
+
+header.topbar .auth > div img{
+    margin-right: 0.35rem;
+}
+
+/* navigation */
+
+/* enables flex in nav class */
+nav .top .container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* enables flex in contact class */
+nav .top .container .contact{
+    display:flex;
+    align-items: center;
+}
+
+/* gives space between phone icon and number */
+nav .top .contact img{
+    margin-right:1rem;   
+}
+
+nav .navar .container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid red;
+}
+
+nav .navbar a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+    padding:1rem 1.5rem;
+    transition:all .3s ease; 
+    margin:0px;
+    
+}
+
+nav .navbar a.active {
+    background: #EE9125 ;
+    color:#FEFEFE;
+}
+
+nav .navbar a:hover{
+    background: #EE9125 ;
+    color:#FEFEFE;
+}
+
+/* section */
+
+/* makes the section scrooling smooth */
+html{
+    scroll-behavior: smooth;
+} 
+
+#section1{
+    display: flex;
+    height: 1000px;
+    background-image: url(../image/s2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom; 
+    opacity: 1;
+}
+
+.sc1{
+    height: 200px;
+    width: 400px;
+    margin-top: 400px;
+    padding: 20px;
+    background:grey;
+    opacity: 0.8;
+}
+
+.sc1 p{
+    font-size: 40px;
+}
+
+#section2{
+    height: 1000px;
+    background: #F0F0F0 ;
+}
+
+#section2 .container p{
+    text-align:center;
+    font-size: 50px;;
+}
+
+#section3{
+    height: 1000px;
+    background: #FEFEFE ;
+}
+#section4{
+    height: 1000px;
+    background: #F0F0F0 ;
+}
