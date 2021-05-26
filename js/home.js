@@ -1,6 +1,7 @@
 
- var slides=document.querySelector('.slider-items').children;
- var nextSlide=document.querySelector(".right-slide");
+// Slider
+var slides=document.querySelector('.slider-items').children;
+var nextSlide=document.querySelector(".right-slide");
 var prevSlide=document.querySelector(".left-slide");
 var totalSlides=slides.length;
 var index=0;
@@ -36,3 +37,21 @@ function next(direction){
 
 }
 
+//Sticky Nav
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var nav = document.getElementById("myNav");
+
+// Get the offset position of the navbar
+var sticky = nav.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    nav.classList.add("sticky")
+  } else {
+    nav.classList.remove("sticky");
+  }
+}
