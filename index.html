@@ -4,44 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/home.css"> 
+    <title>Hamro Mistiri</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $('#header').load('header.html');
+            $('#footer').load('footer.html');
+        })
+    </script> 
 </head>
 <body>
-    <div class="main">
-        <header class="topbar">
-            <div class="container">
-                <div class="icons">
-                    <a href="#"> <img src="./icons/facebook.svg" alt=""> </a>
-                    <a href="#"> <img src="./icons/instagram.svg" alt=""> </a>
-                    <a href="#"> <img src="./icons/twitter.svg" alt=""> </a>
-                    <a href="#"> <img src="./icons/google.svg" alt=""> </a>
-                </div>
-                <div class="auth">  
-                    <div>
-                        <img src="icons/user-icon.svg" alt="">
-                        <a href="./loginregister.html"> Log In  | </a>
-                        <img src="icons/edit.svg" alt="">
-                        <a href="./loginregister.html"> Register Now </a>
-                        
-                    </div>
-                </div>
-            </div>
-        </header>
-    
-        <nav id="myNav">
-            <div class="logo"> Hamro Mistiri</div>
-            <ul>
-                <li> <a class="active" href="#section1"> Home </a> </li>
-                <li> <a href="#section2"> Services </a> </li>
-                <li> <a href="#section3"> Become a Professional </a> </li>
-                <li> <a href="#section4"> Subscribe Us </a> </li>
-                <li> <a href="#section5"> Contact Us </a> </li>
-            </ul>
-        </nav>
-    </div>    
-    
-   <section id="section1">
+    <!-- Header -->
+        <div id="header"> </div>
+    <!-- Site Contents -->
+   <section id="slider">
        <div class="slider-items">
            <div class="item active">
                <img src="images/Slider6.png" alt="" />
@@ -68,7 +45,7 @@
        <P> Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae laborum temporibus fugiat quae asperiores officia error minima, maiores placeat voluptatem nam nihil expedita quaerat corrupti unde, earum doloribus quam quo?</P>
    </section>
 
-   <section id="section4">
+   <section id="subscribe">
        <div class="container">
            <div>
                <img src="./images/craftsmen.png" alt="" height="280px">
@@ -83,7 +60,7 @@
            </div>     
        </div>
    </section>
-   <section id="section5">
+   <section id="contact">
        <div class="contact-info-wrapper">
             <h1 id="ch"> Contact Us</h1>
             <div class="contact-info">
@@ -118,90 +95,9 @@
        </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="box">
-                <h3> About Us </h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                <button > Read More </button>
-            </div>
-            <div class="box">
-                <h3> Quick Links </h3>
-                <ul>
-                    <li> 
-                        <a href="#"> Home </a>
-                    </li>
-                    <li> 
-                        <a href="#"> Services </a>
-                    </li>
-                    <li> 
-                        <a href="#"> Categories </a>
-                    </li>
-                    <li> 
-                        <a href="#"> Testimonials </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="box">
-                <h3> Follow Us </h3>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="./icons/facebook.svg" alt="">
-                            <span> Facebook </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./icons/instagram.svg" alt="">
-                            <span> Instagram </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./icons/twitter.svg" alt="">
-                            <span> Twitter </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./icons/google.svg" alt="">
-                            <span> Google </span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="box gallery">
-                <h3> Gallery </h3>
-                <div class="navgal">
-                    <div>
-                        <img src="./images/Plumber_at_work.jpg" alt="">
-                    </div>
-                    <div>
-                        <img src="./images/personal-trainer.jpg" alt="">
-                    </div>
-                    <div>
-                        <img src="./images/nurse.jpg" alt="">
-                    </div>
-                    <div>
-                        <img src="./images/Engineering-jobs.jpg" alt="">
-                    </div>
-                    <div>
-                        <img src="./images/drain-cleaner.jpg" alt="">
-                    </div>
-                    <div>
-                        <img src="./images/house-painter.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- footer  -->
+    <div id="footer"> </div>
 
-    <footer class="copyright">
-        <div>
-            Copyright © 2020 Sabaiko Mistiri | Developed by <a href="#"> Three Motivated Minds Pvt. Ltd. </a>
-        </div>
-    </footer>
     <script src="js/home.js"></script>
 
 </body>

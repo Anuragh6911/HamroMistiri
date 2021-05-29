@@ -37,91 +37,6 @@
   }
 }
 
-header.topbar {
-  /* background: #232b38  ; */
-  background: #2d333f;
-  color: #fefefe;
-  padding: 0.75rem 0;
-}
-
-header.topbar .icons a {
-  margin-right: 0.6rem;
-}
-
-header.topbar .auth > div a {
-  color: #fefefe;
-  text-decoration: none;
-}
-
-header.topbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header.topbar .container .auth {
-  display: flex;
-}
-
-.header.topbar .auth .divider {
-  padding: 0 1rem;
-}
-
-header.topbar .auth > div img {
-  margin-right: 0.35rem;
-}
-
-/* navigation */
-nav {
-  height: 80px;
-  background: rgb(53, 56, 57);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 50px 0px 100px;
-  /* top right bottom left */
-  position: sticky;
-  top: 0;
-}
-nav .logo {
-  font-size: 33px;
-  color: #fafafa;
-  font-weight: 600;
-}
-nav ul {
-  display: flex;
-  list-style: none;
-}
-nav ul li a {
-  color: #fafafa;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  padding: 30px 10px;
-  border-radius: 0px;
-  transition: all 0.3s ease;
-}
-nav ul li {
-  margin: 0px 5px;
-}
-nav ul li a:hover {
-  color: #ee9a25;
-  /* background-color: #ee9a25; */
-}
-nav ul li a.active {
-  /* background-color: #ee9a25; */
-  /* color: #3a3b39; */
-}
-/* top left-right */
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
 /* section */
 
 /* makes the section scrooling smooth */
@@ -129,13 +44,13 @@ html {
   scroll-behavior: smooth;
 }
 
-#section1 {
+#slider {
   max-width: 1350px;
   border: 0px solid rgb(53, 56, 57);
   margin: 0px auto;
 }
-#section1 .left-slide,
-#section1 .right-slide {
+#slider .left-slide,
+#slider .right-slide {
   position: absolute;
   height: 40px;
   width: 40px;
@@ -149,25 +64,25 @@ html {
   text-align: center;
   line-height: 40px;
 }
-#section1 .left-slide:hover,
-#section1 .right-slide:hover {
+#slider .left-slide:hover,
+#slider .right-slide:hover {
   box-shadow: 0px 0px 10px black;
 }
-#section1 .left-slide {
+#slider .left-slide {
   left: 30px;
 }
-#section1 .right-slide {
+#slider .right-slide {
   right: 30px;
 }
-#section1 .slider-items .item img {
+#slider .slider-items .item img {
   max-width: 100%;
   height: 600px;
   display: block;
 }
-#section1 .slider-items .item {
+#slider .slider-items .item {
   display: none;
 }
-#section1 .slider-items .item.active {
+#slider .slider-items .item.active {
   display: block;
 }
 
@@ -187,37 +102,37 @@ html {
   background: #fefefe;
 }
 
-#section4 {
+#subscribe {
   display: flex;
   align-items: center;
   height: 500px;
   background: #ee9a25;
 }
-#section4 .container {
+#subscribe .container {
   display: flex;
 }
-#section4 h1 {
+#subscribe h1 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
-#section4 p {
+#subscribe p {
   font-size: 1rem;
   margin-bottom: 1.5rem;
   line-height: 1.5;
 }
-#section4 .input-sec4 {
+#subscribe .input-sec4 {
   background: #fefefe;
   display: flex;
   padding: 0.3rem;
   border-radius: 4px;
 }
-#section4 .input-sec4 input {
+#subscribe .input-sec4 input {
   width: 100%;
   border: none;
   padding: 0 1rem;
   font-size: 1rem;
 }
-#section4 .input-sec4 button {
+#subscribe .input-sec4 button {
   padding: 0.8rem 2rem;
   border: none;
   background: #ee9a25;
@@ -228,141 +143,48 @@ html {
   transition: all 0.3s ease;
   outline: none;
 }
-#section4 .input-sec4 button:hover {
+#subscribe .input-sec4 button:hover {
   background: #353839;
 }
-#section4 .input-sec4 input:focus {
+#subscribe .input-sec4 input:focus {
   outline: none;
 }
 
-#section5 {
+#contact {
   display: flex;
   height: 500px;
   background: #fefefe;
 }
-#section5 .contact-info-wrapper {
+#contact .contact-info-wrapper {
   padding: 4rem 0;
   flex: 1;
 }
-#section5 .map {
+#contact .map {
   flex: 1;
   /* filter:grayscale(100%);  */
 }
-#section5 .contact-info {
+#contact .contact-info {
   display: flex;
   justify-content: center;
 }
 #ch {
   text-align: center;
 }
-#section5 .contact-info > div > div {
+#contact .contact-info > div > div {
   display: flex;
   align-items: center;
   margin-top: 2rem;
 }
 
-#section5 .contact-info > div img {
+#contact .contact-info > div img {
   margin-right: 1rem;
 }
-#section5 .contact-info > div > div > div {
+#contact .contact-info > div > div > div {
   display: flex;
   flex-direction: column;
 }
-#section5 .contact-info > div > div > div span:first-child {
+#contact .contact-info > div > div > div span:first-child {
   /* font-family: ; */
   font-weight: bold;
   margin-bottom: 0.25rem;
-}
-
-/* Footer */
-footer {
-  background-color: #3a3b39;
-  padding: 4rem 0;
-}
-footer .container .box button {
-  padding: 0.7rem 0.7rem;
-  border: none;
-  background: #ee9a25;
-  color: #fefefe;
-  border-radius: 4px;
-  font-size: 0.75rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  outline: none;
-}
-footer .container .box button:hover {
-  background-color: #2d333f;
-}
-footer .container {
-  display: flex;
-  color: #fefefe;
-}
-footer .box {
-  flex: 1;
-  margin-right: 2rem;
-  text-align: center;
-}
-footer .gallery img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-footer .gallery .navgal {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-footer .gallery .navgal > div {
-  width: calc(1 / 3 * 100% - (1-1 / 3) * 10px);
-  margin-bottom: 10px;
-}
-footer .box ul {
-  list-style: none;
-}
-footer .box ul li a {
-  color: #fefefe;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-footer .box ul li a:hover {
-  color: #ee9a25;
-}
-footer .box h3 {
-  border-bottom: 1px solid #ee9a25;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
-}
-footer .box p {
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
-footer .box ul li {
-  margin-bottom: 1rem;
-}
-footer .box:nth-child(3) > div {
-  display: flex;
-  justify-content: center;
-}
-footer .box:nth-child(3) {
-  text-align: left;
-}
-footer .box:nth-child(3) h3 {
-  text-align: center;
-}
-footer .box:nth-child(3) > div img {
-  margin-right: 1rem;
-}
-footer .box:nth-child(3) ul li {
-  margin-bottom: 1rem;
-}
-
-footer.copyright {
-  background-color: #2d333f;
-  padding: 1rem 0;
-  color: #fefefe;
-  text-align: center;
-}
-footer.copyright a {
-  color: #ee9a25;
-  text-decoration: none;
 }
