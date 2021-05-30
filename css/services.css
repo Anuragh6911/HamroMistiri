@@ -162,7 +162,7 @@ nav .navbar a:hover {
   width: 8%;
 }
 .card:hover img {
-  width: 25%;
+  width: 16%;
 }
 /* Add some padding inside the card container */
 .cardcontainer {
@@ -175,11 +175,11 @@ nav .navbar a:hover {
 .card img {
   padding-left: 0px;
   border-radius: 5px 5px 0 0;
-  width: 12%;
+  width: 8%;
 }
 
 .card1 img {
-  margin-left: 1450px;
+  margin-left: 1100px;
   border-radius: 5px 5px 0 0;
   width: 3.5%;
 }
