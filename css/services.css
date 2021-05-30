@@ -1,0 +1,199 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+/* yo garesi sabai content center ma huncha */
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1152x;
+  }
+}
+
+header.topbar {
+  /* background: #232b38  ; */
+  background: #2d333f;
+  color: #fefefe;
+  padding: 0.75rem 0;
+}
+
+header.topbar .icons a {
+  margin-right: 0.6rem;
+}
+
+header.topbar .auth > div a {
+  color: #fefefe;
+  text-decoration: none;
+}
+
+header.topbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header.topbar .container .auth {
+  display: flex;
+}
+
+.header.topbar .auth .divider {
+  padding: 0 1rem;
+}
+
+header.topbar .auth > div img {
+  margin-right: 0.35rem;
+}
+
+/* navigation */
+
+/* enables flex in nav class */
+nav .top .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* enables flex in contact class */
+nav .top .container .contact {
+  display: flex;
+  align-items: center;
+}
+
+/* gives space between phone icon and number */
+nav .top .contact img {
+  margin-right: 1rem;
+}
+
+nav .navbar .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(53, 56, 57);
+}
+
+nav .navbar a {
+  display: flex;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+  padding: 1rem 1.5rem;
+  transition: all 0.3s ease;
+  margin: 0px;
+  background-color: #3a3b39;
+}
+
+/* nav .navbar a.active {
+      background: #ee9a25  ;
+      color:#FEFEFE;
+  } */
+
+nav .navbar a:hover {
+  background: #ee9a25;
+  color: #ffffff;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  margin: 40px;
+  padding: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: #ee9125;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+.card1 {
+  /* Add shadows to create the "card" effect */
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 40px;
+  padding: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: #353839;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 20px 30px 0 rgba(20, 20, 20, 0.2);
+  background-color: #e7e6e4;
+  height: 200px;
+}
+
+.card1:hover {
+  box-shadow: 0 20px 30px 0 rgba(20, 20, 20, 0.2);
+  background-color: #e7e6e4;
+  height: 200px;
+}
+
+.card1:hover img {
+  width: 8%;
+}
+.card:hover img {
+  width: 25%;
+}
+/* Add some padding inside the card container */
+.cardcontainer {
+  margin-left: 500px;
+  width: 500px;
+
+  padding-left: 100px;
+}
+
+.card img {
+  padding-left: 0px;
+  border-radius: 5px 5px 0 0;
+  width: 12%;
+}
+
+.card1 img {
+  margin-left: 1450px;
+  border-radius: 5px 5px 0 0;
+  width: 3.5%;
+}
+
+.cardimg1 {
+  /* background-color: aqua; */
+  margin-left: 00px;
+}
+/* .cardimg1 {
+      margin-left: px;
+      padding-left: 500px;
+      border-radius: 5px 5px 0 0;
+      } */
+.cardcontainer1 {
+  padding-left: 00px;
+  width: 300px;
+}

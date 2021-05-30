@@ -1,0 +1,497 @@
+body {
+  background-image: url("background.jpg");
+}
+
+.parent {
+  margin-top: 5px;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.img {
+  padding-left: 50px;
+  width: 50%;
+  height: auto;
+}
+.btn {
+  padding: 12px;
+  border-radius: 10px;
+  width: 60%;
+  background: #ee9a25;
+  border: 5cm;
+  color: black;
+}
+.child {
+  border-radius: 30px;
+  width: 340px;
+  height: 75.5vh;
+  background: rgb(58, 59, 57);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80px;
+  opacity: 0.95;
+}
+
+.child2 {
+  width: 200px;
+
+  padding-top: 50px;
+}
+
+.title {
+  width: 80px;
+  margin-right: 10px;
+  padding-left: 65px;
+  padding-bottom: 10px;
+}
+.Register-Form .title {
+  width: 80px;
+  padding-left: 120px;
+  padding-bottom: 10px;
+}
+
+.email {
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+.Register-Form .email {
+  border-radius: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+}
+
+.user {
+  border-radius: 10px;
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+
+.password {
+  padding-bottom: 20px;
+}
+
+.Register-Form .password {
+  padding-bottom: 10px;
+  padding-left: 50px;
+}
+.repassword {
+  padding-bottom: 12px;
+  padding-left: 50px;
+}
+
+.btnn {
+  padding-left: 55px;
+}
+
+.Register-Form .btnn {
+  padding-left: 98px;
+}
+
+input {
+  padding: 9px;
+  border-radius: 10px;
+}
+
+.forget {
+  color: blue;
+  padding-left: 150px;
+  font-size: small;
+}
+
+.ff {
+  padding-bottom: 20px;
+}
+
+.Register-Form {
+  display: none;
+  padding-top: 10px;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  background-color: #ee9a25;
+  width: 340px;
+  height: 62.8vh;
+  border-radius: 30px;
+}
+
+.Login-Form {
+  width: auto;
+}
+
+.btn1 {
+  padding: 12px;
+  border-radius: 10px;
+  width: 60%;
+  background: rgb(58, 59, 57);
+  border: 5cm;
+  color: black;
+}
+
+.message {
+  margin: 20px 0 30px;
+  padding-right: 0px;
+  text-align: center;
+}
+.message a:hover {
+  color: grey;
+  text-decoration: none;
+}
+.message a {
+  color: blue;
+  text-decoration: none;
+}
+
+.message1 {
+  margin-top: 20px;
+  margin-right: 100px;
+  padding-right: 0px;
+  text-align: center;
+}
+.message1 a:hover {
+  color: grey;
+  text-decoration: none;
+}
+.message1 a {
+  color: blue;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .parent {
+    margin-top: 120px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+
+  .img {
+    padding-left: 35px;
+    width: 55%;
+    height: auto;
+  }
+  .btn {
+    padding: 12px;
+    border-radius: 10px;
+    width: 60%;
+    background: #ee9a25;
+    border: 5cm;
+    color: black;
+  }
+  .child {
+    border-radius: 30px;
+    width: 450px;
+    height: 60vh;
+    background: rgb(58, 59, 57);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+    opacity: 0.95;
+  }
+
+  .child2 {
+    width: auto;
+    padding-left: 105px;
+    padding-top: 50px;
+  }
+
+  .title {
+    width: 80px;
+    padding-left: 85px;
+    padding-bottom: 10px;
+  }
+  .Register-Form .title {
+    width: 80px;
+    padding-left: 185px;
+    padding-bottom: 10px;
+  }
+
+  .email {
+    border-radius: 10px;
+    padding-bottom: 20px;
+  }
+  .Register-Form .email {
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+  }
+
+  .user {
+    border-radius: 10px;
+    padding-left: 100px;
+    padding-bottom: 10px;
+  }
+  .password {
+    padding-bottom: 20px;
+  }
+
+  .Register-Form .password {
+    padding-bottom: 10px;
+    padding-left: 100px;
+  }
+  .repassword {
+    padding-bottom: 15px;
+    padding-left: 100px;
+  }
+
+  .Register-Form .btnn {
+    padding-left: 0px;
+    padding-right: 50px;
+  }
+
+  .btnn {
+    padding-right: 30px;
+  }
+
+  .Register-Form .btnn {
+    padding-left: 150px;
+  }
+
+  input {
+    padding: 9px;
+    border-radius: 10px;
+  }
+
+  .forget {
+    color: blue;
+    padding-left: 150px;
+    font-size: small;
+  }
+
+  .ff {
+    padding-bottom: 20px;
+  }
+
+  .Register-Form {
+    display: none;
+    padding-top: 10px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    background-color: #ee9a25;
+    width: 449px;
+    height: 43vh;
+    border-radius: 30px;
+  }
+
+  .Login-Form {
+    width: auto;
+  }
+
+  .btn1 {
+    padding: 12px;
+    border-radius: 10px;
+    width: 60%;
+    background: rgb(37, 37, 56);
+    border: 5cm;
+    color: black;
+  }
+
+  .message {
+    margin: 20px 0 30px;
+    padding-right: 110px;
+    text-align: center;
+  }
+  .message a:hover {
+    color: grey;
+    text-decoration: none;
+  }
+  .message a {
+    color: blue;
+    text-decoration: none;
+  }
+  .message1 {
+    margin-top: 20px;
+    margin-right: 100px;
+    padding-right: 0px;
+    text-align: center;
+  }
+  .message1 a:hover {
+    color: grey;
+    text-decoration: none;
+  }
+  .message1 a {
+    color: blue;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  body {
+    background-image: url("");
+  }
+  .parent {
+    margin-top: 0px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+
+  .img {
+    padding-left: 43px;
+    width: 45%;
+  }
+  .btn {
+    padding: 12px;
+    border-radius: 10px;
+    width: 60%;
+    background: #ee9a25;
+    border: 5cm;
+    color: black;
+  }
+  .child {
+    border-radius: 30px;
+    width: 450px;
+    height: 73.2vh;
+    background: rgb(58, 59, 57);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+    opacity: 0.92;
+  }
+
+  .child2 {
+    width: auto;
+    padding-left: 105px;
+    padding-top: 50px;
+  }
+
+  .title {
+    width: 80px;
+    padding-left: 85px;
+    padding-bottom: 10px;
+  }
+  .Register-Form .title {
+    width: 80px;
+    padding-left: 185px;
+    padding-bottom: 9px;
+  }
+
+  .email {
+    border-radius: 10px;
+    padding-bottom: 20px;
+  }
+  .Register-Form .email {
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+  }
+
+  .user {
+    border-radius: 10px;
+    padding-left: 100px;
+    padding-bottom: 10px;
+  }
+  .password {
+    padding-bottom: 20px;
+  }
+
+  .Register-Form .password {
+    padding-bottom: 10px;
+    padding-left: 100px;
+  }
+  .repassword {
+    padding-bottom: 10px;
+    padding-left: 100px;
+  }
+
+  .btnn {
+    padding-left: 35px;
+  }
+
+  .Register-Form .btnn {
+    padding-left: 150px;
+  }
+
+  input {
+    padding: 9px;
+    border-radius: 10px;
+  }
+
+  .forget {
+    color: blue;
+    padding-left: 150px;
+    font-size: small;
+  }
+
+  .ff {
+    padding-bottom: 20px;
+  }
+
+  .Register-Form {
+    display: none;
+    padding-top: 10px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    background-color: #ee9a25;
+    opacity: 0.99;
+    width: 449px;
+    height: 55vh;
+    border-radius: 30px;
+  }
+
+  .Login-Form {
+    width: auto;
+  }
+
+  .btn1 {
+    padding: 12px;
+    border-radius: 10px;
+    width: 60%;
+    background: rgb(58, 59, 57);
+    border: 5cm;
+    color: black;
+  }
+
+  .message {
+    margin: 20px 0 30px;
+    padding-right: 1px;
+    text-align: center;
+  }
+  .message a:hover {
+    color: grey;
+    text-decoration: none;
+  }
+  .message a {
+    color: blue;
+    text-decoration: none;
+  }
+  .message1 {
+    margin-top: 20px;
+    margin-right: 100px;
+    padding-right: 0px;
+    text-align: center;
+  }
+  .message1 a:hover {
+    color: grey;
+    text-decoration: none;
+  }
+  .message1 a {
+    color: blue;
+    text-decoration: none;
+  }
+}
+
+.btnhome {
+  margin-top: 15px;
+  margin-left: 15px;
+  background-color: #ee9a25; /* Blue background */
+  border: none; /* Remove borders */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.btnhome:hover {
+  background-color: rgb(58, 59, 57);
+}
+
+.btnhome a {
+  color: white;
+  text-decoration: none;
+}
