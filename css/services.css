@@ -1,129 +1,10 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  width: 100%;
-  padding: 0 25px;
-  margin: 0 auto;
-}
-/* yo garesi sabai content center ma huncha */
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1152x;
-  }
-}
-
-header.topbar {
-  /* background: #232b38  ; */
-  background: #2d333f;
-  color: #fefefe;
-  padding: 0.75rem 0;
-}
-
-header.topbar .icons a {
-  margin-right: 0.6rem;
-}
-
-header.topbar .auth > div a {
-  color: #fefefe;
-  text-decoration: none;
-}
-
-header.topbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header.topbar .container .auth {
-  display: flex;
-}
-
-.header.topbar .auth .divider {
-  padding: 0 1rem;
-}
-
-header.topbar .auth > div img {
-  margin-right: 0.35rem;
-}
-
-/* navigation */
-
-/* enables flex in nav class */
-nav .top .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* enables flex in contact class */
-nav .top .container .contact {
-  display: flex;
-  align-items: center;
-}
-
-/* gives space between phone icon and number */
-nav .top .contact img {
-  margin-right: 1rem;
-}
-
-nav .navbar .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid rgb(53, 56, 57);
-}
-
-nav .navbar a {
-  display: flex;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: 1.25rem;
-  padding: 1rem 1.5rem;
-  transition: all 0.3s ease;
-  margin: 0px;
-  background-color: #3a3b39;
-}
-
-/* nav .navbar a.active {
-      background: #ee9a25  ;
-      color:#FEFEFE;
-  } */
-
-nav .navbar a:hover {
-  background: #ee9a25;
-  color: #ffffff;
-}
-
 .card {
   /* Add shadows to create the "card" effect */
   margin: 40px;
   padding: 50px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  background-color: #ee9125;
+  background-color: #fea72b;
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -136,9 +17,9 @@ nav .navbar a:hover {
   justify-content: space-between;
   margin: 40px;
   padding: 50px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 #363a40;
   transition: 0.3s;
-  background-color: #353839;
+  background-color: #3d414a;
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -196,4 +77,11 @@ nav .navbar a:hover {
 .cardcontainer1 {
   padding-left: 00px;
   width: 300px;
+}
+
+.heading {
+  padding-top: 10px;
+  text-align: center;
+  color: #3d414a;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
