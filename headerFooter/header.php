@@ -1,3 +1,10 @@
+<?php
+session_start();
+
+if(!isset($_SESSION['fullname'])){
+ //   header ('location:loginregister.php');
+}
+?>
 <div class="main">
     <header class="topbar">
         <div class="container">
@@ -7,12 +14,28 @@
                 <a href="#"> <img src="../icons/twitter.svg" alt=""> </a>
                 <a href="#"> <img src="../icons/google.svg" alt=""> </a>
             </div>
-            <div class="auth">  
+            <?php
+               if(isset($_SESSION['fullname'])){
+                
+                echo ' <div class="auth"> <img src="icons/user-icon.svg" alt="">';
+
+                     echo $_SESSION['fullname'];
+                   
+            }   
+            
+            else{
+                echo ' 
+           
                 <div>
-                    <img src="../icons/user-icon.svg" alt="">
+                    <img src="icons/user-icon.svg" alt="">
                     <a href="../loginregister.html"> Log In/ Register</a>
-                    <!-- <img src="icons/edit.svg" alt="">
+                   ';
+                   
+            }
+            ?>
+             <!-- <img src="icons/edit.svg" alt="">
                     <a href="./loginregister.html"> Register Now </a> -->
+
                 </div>
             </div>
         </div>
@@ -21,12 +44,12 @@
     <nav id="myNav">
         <div class="logo"> Hamro Mistiri </div>
         <ul>
-            <li> <a class="active" href="../index.html"> Home </a> </li>
-            <li> <a href="../index.html#section2"> Services </a> </li>
-            <li> <a href="../index.html#section3"> Become a Professional </a> </li>
-            <li> <a href="../index.html#section4"> About </a> </li>
-            <li> <a href="../index.html#subscribe"> Subscribe  </a> </li>
-            <li> <a href="../index.html#contact"> Contact </a> </li>
+            <li> <a class="active" href="../index.htmphpl"> Home </a> </li>
+            <li> <a href="../index.php#section2"> Services </a> </li>
+            <li> <a href="../index.php#section3"> Become a Professional </a> </li>
+            <li> <a href="../index.php#section4"> About </a> </li>
+            <li> <a href="../index.php#subscribe"> Subscribe  </a> </li>
+            <li> <a href="../index.php#contact"> Contact </a> </li>
         </ul>
     </nav>
 </div>  
