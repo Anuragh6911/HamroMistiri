@@ -99,7 +99,11 @@ html {
 
 #section3 {
   height: 1000px;
-  background: #fefefe;
+}
+
+#about {
+  height: 1000px;
+  background: pink;
 }
 
 #subscribe {
@@ -187,4 +191,18 @@ html {
   /* font-family: ; */
   font-weight: bold;
   margin-bottom: 0.25rem;
+}
+
+#section3 .MainForm {
+  background: #ee9a25;
+  height: 100%;
+}
+
+#section3.yellow {
+  background-color: #3a3b39;
+  width: 50%;
+}
+
+#section3.Form {
+  background-color: #353839;
 }

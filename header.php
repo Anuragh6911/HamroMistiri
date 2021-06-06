@@ -44,12 +44,12 @@ if(!isset($_SESSION['fullname'])){
     <nav id="myNav">
         <div class="logo"> Hamro Mistiri </div>
         <ul>
-            <li> <a class="active" href="../index.htmphpl"> Home </a> </li>
-            <li> <a href="../index.php#section2"> Services </a> </li>
-            <li> <a href="../index.php#section3"> Become a Professional </a> </li>
-            <li> <a href="../index.php#section4"> About </a> </li>
-            <li> <a href="../index.php#subscribe"> Subscribe  </a> </li>
-            <li> <a href="../index.php#contact"> Contact </a> </li>
+            <li> <a class="active" href="./index.php"> Home </a> </li>
+            <li> <a href="./index.php#section2"> Services </a> </li>
+            <li> <a href="./index.php#section3"> Become a Professional </a> </li>
+            <li> <a href="./index.php#about"> About </a> </li>
+            <li> <a href="./index.php#subscribe"> Subscribe  </a> </li>
+            <li> <a href="./index.php#contact"> Contact </a> </li>
         </ul>
     </nav>
 </div>  

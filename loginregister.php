@@ -67,7 +67,7 @@ if(isset($_POST['submit1'])){
 ?>
 
 
-	<button class="btnhome"> <a href="/index.php"> <i class="fa fa-home" href=""></i> Home </a></button>
+	<button class="btnhome"> <a href="./index.php"> <i class="fa fa-home" href=""></i> Home </a></button>
 	<div class="parent"> 
 		        <div class="child">
 					<div class="child2">
