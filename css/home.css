@@ -98,19 +98,103 @@ html {
 }
 
 #section3 {
-  height: 1000px;
+  height: 750px;
+}
+#section3 .MainForm {
+  display: flex;
+  background: #ee9a25;
+  height: 100%;
+}
+#section3 .Yellow {
+  width: 80%;
+  height: 500px;
+}
+
+#section3 .Form {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  height: 100%;
+  padding: 90px 30px 0px 40px;
+}
+
+#section3 input[id="PhoneNumber"],
+input[id="PanNumber"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#section3 input[id="Fullname"],
+input[id="Email"] {
+  width: 100%;
+  padding: 12px 190px 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#section3 .Emailflex {
+  display: flex;
+}
+
+#section3 .Emailclass {
+  margin-left: 15%;
+}
+
+#section3 .labelemail {
+  margin-left: 48%;
+}
+
+#section3 h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 2% 0% 5%;
+}
+
+#section3 .registername {
+  color: #ee9a25;
+  font-family: monospace;
+  font-size: larger;
+  font-weight: 200;
+}
+
+#section3 label {
+  color: #3d414a;
+  font-family: monospace;
+  font-size: larger;
+  font-weight: bold;
+}
+#section3 input[type="submit"] {
+  padding: 0.8rem 2rem;
+  width: 20%;
+  border: none;
+  background: #ee9a25;
+  color: #3d414a;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+#section3 input[type="submit"]:hover {
+  background: #eca848;
 }
 
 #about {
   height: 1000px;
-  background: pink;
 }
 
 #subscribe {
   display: flex;
   align-items: center;
   height: 500px;
-  background: #ee9a25;
+  background: #f7b04e;
 }
 #subscribe .container {
   display: flex;
@@ -191,18 +275,4 @@ html {
   /* font-family: ; */
   font-weight: bold;
   margin-bottom: 0.25rem;
-}
-
-#section3 .MainForm {
-  background: #ee9a25;
-  height: 100%;
-}
-
-#section3.yellow {
-  background-color: #3a3b39;
-  width: 50%;
-}
-
-#section3.Form {
-  background-color: #353839;
 }

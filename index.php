@@ -65,41 +65,50 @@ if(!isset($_SESSION['fullname'])){
         <ul>
           <a href="./engineer.php"> Engineer </a>
         </ul>
+        <ul>
+          <a href="./carpenter.php"> Carpenter </a>
+        </ul>
       </div>
     </section>
 
     <section id="section3">
       <div class="MainForm">
-        <div class="Yellow"></div>
         <div class="Form">
+           <div class="registername">REGISTER HERE</div>
           <h1>Become A Professional</h1>
           <div>
             <form action="">
-              <label for="fname">Full Name</label>
+              <label for="fname">FULL NAME</label>
+              <label class="labelemail" for="email">EMAIL ADDRESS </label></br>
+           <div class="Emailflex">
+              <div>
               <input
                 type="text"
-                id="name1"
+                id="Fullname"
                 name="fullname"
                 placeholder="Your Full Name"
               />
-
-              <label for="email">Email</label>
+              </div>
+              <div class="Emailclass">
               <input
                 type="text"
                 id="Email"
                 name="Email"
                 placeholder=" Your Email"
               />
+              </div>
+          </div>
+    
 
-              <label for="phone">Phone Number</label>
+              <label for="phone">PHONE NUMBER</label>
               <input
                 type="text"
                 id="PhoneNumber"
                 name="PhoneNumber"
                 placeholder="Enter Your Phone Number"
               />
-
-              <label for="PanNumber">Pan-Number</label>
+  
+              <label for="PanNumber">PAN-NUMBER</label>
               <input
                 type="text"
                 id="PanNumber"
@@ -107,23 +116,25 @@ if(!isset($_SESSION['fullname'])){
                 placeholder="Enter Your Pan-Number"
               />
 
-              <label for="Services">Services*</label>
+              <label for="Services">SERVICES*</label>
               <select id="Services" name="Services">
                 <option value="Plumber">Plumber</option>
                 <option value="Painter">Painter</option>
                 <option value="Mechanics">Mechanics</option>
                 <option value="Technician">Technician</option>
                 <option value="Mechanics">Engineer</option>
+                <option value="Carpenter">Carpenter</option>
               </select>
 
-              <label for="PanNumber">About You</label>
+              <label for="PanNumber">ABOUT YOU</label>
               <textarea id="w3review" name="w3review" rows="4" cols="50">
               </textarea>
 
-              <input type="submit" value="Submit" />
+              <input type="submit" value="SUBMIT" />
             </form>
           </div>
         </div>
+        <div class="Yellow"></div>
       </div>
     </section>
 
