@@ -186,6 +186,10 @@ input[id="Email"] {
   background: #eca848;
 }
 
+#section3 .Yellow {
+  padding: 100px 0px 0px 170px;
+}
+
 #about {
   height: 1000px;
 }
@@ -194,7 +198,7 @@ input[id="Email"] {
   display: flex;
   align-items: center;
   height: 500px;
-  background: #f7b04e;
+  background: #ee9a25;
 }
 #subscribe .container {
   display: flex;

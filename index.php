@@ -134,7 +134,7 @@ if(!isset($_SESSION['fullname'])){
             </form>
           </div>
         </div>
-        <div class="Yellow"></div>
+        <div class="Yellow"><img src="./images/iphone.png" ></div>
       </div>
     </section>
 
