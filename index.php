@@ -47,10 +47,47 @@ if(!isset($_SESSION['fullname'])){
       <div class="right-slide">></div>
     </section>
 
-    <section id="section2">
-      <div class="container">
-        <p>services</p>
-        <ul>
+    <section id="services">
+      <h1> Our Services </h1>
+      <div class="content-box">
+        <div class="card" onclick="window.location='/HamroMistiri/carpenter.php';"> 
+          <i class="icons"> <img src="./icons/carpenter1.svg" height="35px">  </i>
+          <h2> Carpenter </h2>
+          <p> Carpenters construct, erect, install, and repair structures and fixtures made from wood and other materials.</p>
+        </div> 
+
+        <div class="card" onclick="window.location='/HamroMistiri/mechanics.php';"> 
+          <i class="icons"> <img src="./icons/mechanics.svg" height="35px">  </i>
+          <h2> Mechanics </h2>
+          <p> An auto mechanic performs maintenance, repairs, and inspections vehicles. They work on engines, drive belts, transmissions, and electronic systems.</p>
+        </div> 
+
+        <div class="card" onclick="window.location='/HamroMistiri/plumber.php';"> 
+          <i class="icons"> <img src="./icons/plumber.svg" height="35px">  </i>
+          <h2> Plumber </h2>
+          <p> A plumber is a person whose job is to connect and repair things such as water and drainage pipes, baths, and toilets</p>
+        </div> 
+
+        <div class="card" onclick="window.location='/HamroMistiri/engineer.php';"> 
+          <i class="icons"> <img src="./icons/engineer.svg" height="35px">  </i>
+          <h2> Engineer </h2>
+          <p> Civil engineers ensure safe construction, operation and maintenance of your house.</p>
+        </div> 
+
+        <div class="card" onclick="window.location='/HamroMistiri/painter.php';"> 
+          <i class="icons"> <img src="./icons/painter.svg" height="35px">  </i>
+          <h2> Home Painter </h2>
+          <p> Painting the interior of your home is an endeavor that requires a great deal of time</p>
+        </div> 
+
+        <div class="card" onclick="window.location='/HamroMistiri/technician.php';"> 
+          <i class="icons"> <img src="./icons/technician.svg" height="35px">  </i>
+          <h2> Technician </h2>
+          <p> Professional technican will provide tech support and services such as computer repair, TV mounting and smart home setup</p>
+        </div> 
+
+      </div>
+      <!-- <ul>
           <a href="./plumber.php"> Plumber </a>
         </ul>
         <ul>
@@ -67,8 +104,7 @@ if(!isset($_SESSION['fullname'])){
         </ul>
         <ul>
           <a href="./carpenter.php"> Carpenter </a>
-        </ul>
-      </div>
+        </ul> -->
     </section>
 
     <section id="section3">

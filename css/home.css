@@ -46,7 +46,7 @@ html {
 
 #slider {
   max-width: 1350px;
-  border: 0px solid rgb(53, 56, 57);
+  border: 2px solid rgb(53, 56, 57);
   margin: 0px auto;
 }
 #slider .left-slide,
@@ -87,16 +87,76 @@ html {
 }
 
 /* Section 2 */
-#section2 {
-  height: 1000px;
+#services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* h1 ra baki conent lai mtra flex banako */
   background: #f0f0f0;
 }
-
-#section2 .container p {
-  text-align: center;
-  font-size: 50px;
+#services h1 {
+  font-size: 2.5em;
+  margin: 100px 0px 10px 0px;
+  /* top right bottom left */
+}
+.content-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 30px 100px 20px 100px;
+}
+.card {
+  min-height: 100px;
+  width: 350px;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  margin: 10px 4px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
 }
 
+.card i {
+  margin: 10px;
+}
+
+.card h2 {
+  margin-bottom: 12px;
+  text-align: center;
+  font-weight: 400;
+}
+.card p {
+  color: #6c757d;
+  text-align: center;
+}
+.card:hover {
+  background: #ddd;
+  cursor: pointer;
+}
+
+/* Making Service Section Responsive */
+@media (max-width: 991px) {
+  #service {
+    padding: 25px;
+  }
+  #service h1 {
+    font-size: 2rem;
+  }
+  .content-box {
+    flex-direction: column;
+    width: 100%;
+  }
+  .card {
+    min-width: 300px;
+    margin: 10px auto;
+  }
+}
+
+/* Become a Professiona; */
 #section3 {
   height: 750px;
 }
@@ -260,6 +320,7 @@ input[id="Email"] {
   justify-content: center;
 }
 #ch {
+  margin-top: 15px;
   text-align: center;
 }
 #contact .contact-info > div > div {
