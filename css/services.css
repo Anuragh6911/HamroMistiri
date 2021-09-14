@@ -47,10 +47,9 @@
 }
 /* Add some padding inside the card container */
 .cardcontainer {
-  margin-left: 500px;
+  margin-left: 200px;
   width: 500px;
-
-  padding-left: 100px;
+  padding-left: 00px;
 }
 
 .card img {

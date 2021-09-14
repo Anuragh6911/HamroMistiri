@@ -23,7 +23,7 @@ if(isset($_POST['submit1'])){
     $email1 = $_POST['email1'];
     $pass1 = $_POST['pass1'];
 
-    $email_serach =" SELECT * from registered where email= '$email1' ";
+    $email_serach =" SELECT * from register where email= '$email1' ";
     $query1 =mysqli_query($con,$email_serach);
 
     $email_count1 =mysqli_num_rows($query1);
@@ -38,7 +38,7 @@ if(isset($_POST['submit1'])){
         $pass_decode = password_verify($pass1, $db_pass);
 
         if($pass_decode){
-            echo"login successful";
+           // echo"login successful";
             ?>
             <script>
                 location.replace("index.php");
@@ -114,7 +114,7 @@ if(isset($_POST['submit1'])){
 						$password = password_hash($pass, PASSWORD_BCRYPT);
 						$repassword = password_hash($repass, PASSWORD_BCRYPT);
 					
-						$emailquery = "SELECT * FROM `registered` WHERE email = '$email' ";
+						$emailquery = "SELECT * FROM `register` WHERE email = '$email' ";
 						$query = mysqli_query($con,$emailquery);
 						
 						$emailcount = mysqli_num_rows($query);
@@ -129,7 +129,7 @@ if(isset($_POST['submit1'])){
 
 						}else{
 							if($pass===$repass){
-								$insertquery ="INSERT INTO `registered`(`fullname`, `email`, `contact`, `pass`, `repass`) values ('$fullname','$email','$contact','$password','$repassword')";
+								$insertquery ="INSERT INTO `register`(`fullname`, `email`, `contact`, `pass`, `repass`) values ('$fullname','$email','$contact','$password','$repassword')";
 							
 							$iquery = mysqli_query($con, $insertquery);
 
