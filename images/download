@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<!--====form section start====-->
+<div class="user-detail">
+    <h2>Create User Data</h2>
+    <form action="/users/create" method="POST">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter Full Name" name="fullName" required>
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter Email Address" name="emailAddress" required>
+          <label>City</label>
+          <input type="city" placeholder="Enter Full City" name="city" required>
+          <label>Country</label>
+          <input type="text" placeholder="Enter Full Country" name="country" required>
+          <button type="submit">Submit</button>
+        </div>
+</div>
+<!--====form section start====-->
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Register </title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1> Become a Professional </h1>
+        <form method="post">
+            <input type="text" name="firstName" placeholder="Enter first name"> 
+            <br>
+            <br>
+            <input type="text" name="middleName" placeholder="Enter middle name" > 
+            <br>
+            <br>
+            <input type="text" name="lastName" placeholder="Enter last name" > 
+            <br>
+            <br>
+            <input type="text" name="email" placeholder="Enter your email id" > 
+            <br>
+            <br>
+            <input type="text" name="phone" placeholder="Enter your phone number" > 
+            <br>
+            <br>
+            <input type="text" name="profession" placeholder="Enter your profession" > 
+            <br>
+            <br>
+            <button type="submit"> Submit </button>
+        </form>
+    </div>
+    
+    <style>
+        *{
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .h1{
+            text-align: center;
+        }
+        .container{
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+    </style>
+</body>
+</html> -->

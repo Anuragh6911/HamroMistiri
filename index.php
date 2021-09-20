@@ -28,7 +28,9 @@
     <section id="slider">
       <div class="slider-items">
         <div class="item active">
-          <img src="./images/hh.jpg" alt="" />
+
+          <img src="images/slider1.png" alt="" />
+
         </div>
         <div class="item">
           <img src="images/Slider2.png" alt="" />
@@ -81,24 +83,7 @@
         </div> 
 
       </div>
-      <!-- <ul>
-          <a href="./plumber.php"> Plumber </a>
-        </ul>
-        <ul>
-          <a href="./painter.php"> Painter </a>
-        </ul>
-        <ul>
-          <a href="./mechanics.php"> Mechanics </a>
-        </ul>
-        <ul>
-          <a href="./technician.php"> Technician </a>
-        </ul>
-        <ul>
-          <a href="./engineer.php"> Engineer </a>
-        </ul>
-        <ul>
-          <a href="./carpenter.php"> Carpenter </a>
-        </ul> -->
+      
     </section>
 <?php
 include 'dbcon.php';
@@ -244,7 +229,10 @@ $con->close();
     </section>
 
      <section id="about">
-     </section>
+        <div class="about-us">
+        </div>
+        <div>
+      </section>
 
 
 
@@ -281,7 +269,7 @@ $con->close();
               </div>
             </div>
             <div>
-              <img src="icons/bag-2.svg" alt="" />
+              <img src="icons/email.svg" alt="" />
               <div>
                 <span> Email </span>
                 <span> support@sabaikomistiri.com </span>

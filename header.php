@@ -9,15 +9,15 @@ if(!isset($_SESSION['fullname'])){
     <header class="topbar">
         <div class="container">
             <div class="icons">
-                <a href="#"> <img src="../icons/facebook.svg" alt=""> </a>
-                <a href="#"> <img src="../icons/instagram.svg" alt=""> </a>
-                <a href="#"> <img src="../icons/twitter.svg" alt=""> </a>
-                <a href="#"> <img src="../icons/google.svg" alt=""> </a>
+                <a href="#"> <img src="./icons/facebook.svg" alt=""> </a>
+                <a href="#"> <img src="./icons/instagram.svg" alt=""> </a>
+                <a href="#"> <img src="./icons/twitter.svg" alt=""> </a>
+                <a href="#"> <img src="./icons/google.svg" alt=""> </a>
             </div>
             <?php
                if(isset($_SESSION['fullname'])){
                 
-                echo ' <div class="auth"> <img src="icons/user-icon.svg" alt="">';
+                echo ' <div class="auth"> <img src="icons/user-icon.svg" alt=""> &nbsp';
 
                      echo $_SESSION['fullname'];
                    
