@@ -35,6 +35,7 @@ if(!isset($_SESSION['fullname'])){
                  <div class="cardcontainer">
                    <h4><b>Anurag Baskota</b></h4>
                    <p>Software Engineer</p>
+                   <p> Co.Number:9823366694</p>
                  </div>
             </div>
 

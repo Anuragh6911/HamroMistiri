@@ -108,7 +108,7 @@ html {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 30px 100px 20px 100px;
+  margin: 30px 100px 170px 100px;
 }
 .card {
   min-height: 100px;

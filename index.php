@@ -1,10 +1,4 @@
-<?php
-session_start();
 
-if(!isset($_SESSION['fullname'])){
- //   header ('location:loginregister.php');
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -34,7 +28,9 @@ if(!isset($_SESSION['fullname'])){
     <section id="slider">
       <div class="slider-items">
         <div class="item active">
+
           <img src="images/slider1.png" alt="" />
+
         </div>
         <div class="item">
           <img src="images/Slider2.png" alt="" />
@@ -89,14 +85,16 @@ if(!isset($_SESSION['fullname'])){
       </div>
       
     </section>
-
+<?php
+include 'dbcon.php';
+?>
     <section id="section3">
       <div class="MainForm">
         <div class="Form">
            <div class="registername">REGISTER HERE</div>
           <h1>Become A Professional</h1>
           <div>
-            <form action="">
+            <form class="Login-Form" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
               <label for="fname">FULL NAME</label>
               <label class="labelemail" for="email">EMAIL ADDRESS </label></br>
            <div class="Emailflex">
@@ -104,7 +102,7 @@ if(!isset($_SESSION['fullname'])){
               <input
                 type="text"
                 id="Fullname"
-                name="fullname"
+                name="fname"
                 placeholder="Your Full Name"
               />
               </div>
@@ -112,8 +110,8 @@ if(!isset($_SESSION['fullname'])){
               <input
                 type="text"
                 id="Email"
-                name="Email"
-                placeholder=" Your Email"
+                name="email_1"
+                placeholder="Your Email"
               />
               </div>
           </div>
@@ -123,7 +121,7 @@ if(!isset($_SESSION['fullname'])){
               <input
                 type="text"
                 id="PhoneNumber"
-                name="PhoneNumber"
+                name="phone"
                 placeholder="Enter Your Phone Number"
               />
   
@@ -131,12 +129,12 @@ if(!isset($_SESSION['fullname'])){
               <input
                 type="text"
                 id="PanNumber"
-                name="PanNumber"
+                name="pan"
                 placeholder="Enter Your Pan-Number"
               />
 
               <label for="Services">SERVICES*</label>
-              <select id="Services" name="Services">
+              <select id="Services" name="services">
                 <option value="Plumber">Plumber</option>
                 <option value="Painter">Painter</option>
                 <option value="Mechanics">Mechanics</option>
@@ -146,11 +144,84 @@ if(!isset($_SESSION['fullname'])){
               </select>
 
               <label for="PanNumber">ABOUT YOU</label>
-              <textarea id="w3review" name="w3review" rows="4" cols="50">
+              <textarea id="w3review" name="aboutyou" rows="4" cols="50">
               </textarea>
 
-              <input type="submit" value="SUBMIT" />
+              <input type="submit" value="SUBMIT"  name="submit2" />
             </form>
+
+          
+          
+          <?php
+
+
+$server ="localhost";
+$user ="root";
+$password ="";
+$db ="login_user";
+
+$con = mysqli_connect($server,$user,$password,$db);
+
+
+if ($con){
+    ?>
+    <script>
+       alert("Connection Successful");
+        </script>
+    <?php
+}else{
+    ?>
+    <script>
+        alert("NO  connection");
+        </script>
+        <?php
+
+}
+
+?>
+<?php
+					
+					//include 'dbcon.php';
+
+					if(isset($_POST['submit2'])){
+						$fname = mysqli_real_escape_string($con, $_POST['fname']);
+						$email_1 = mysqli_real_escape_string($con, $_POST['email_1']);
+            $phone = mysqli_real_escape_string($con, $_POST['phone']);
+            $pan = mysqli_real_escape_string($con, $_POST['pan']);
+            $services = mysqli_real_escape_string($con, $_POST['services']);
+            $aboutyou = mysqli_real_escape_string($con, $_POST['aboutyou']);
+
+           /* $emailquery = "SELECT * FROM `register` WHERE email_1 = '$email_1' ";
+					$query = mysqli_query($con,$emailquery);
+						
+						$emailcount = mysqli_num_rows($query);
+
+						if($emailcount>0){
+						?>
+								<script>
+								alert("email exists");
+								</script>
+                <?php
+							*/
+                
+    $sql3 = "INSERT INTO `register` (`fname`, `email_1`,`phone`,`pan`,`service`,`aboutyou` ) VALUES ('$fname', '$email_1','$phone','$pan','$services','$aboutyou' )"; 
+
+if ($con->query($sql3) === TRUE) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql3 . "<br>" . $con->error;
+
+            
+}
+            
+ 
+$con->close();
+          }
+          
+        
+?>
+
+            
           </div>
         </div>
         <div class="Yellow"><img src="./images/iphone.png" ></div>

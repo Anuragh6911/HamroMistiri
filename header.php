@@ -28,7 +28,7 @@ if(!isset($_SESSION['fullname'])){
            
                 <div>
                     <img src="icons/user-icon.svg" alt="">
-                    <a href="../loginregister.html"> Log In/ Register</a>
+                    <a href="loginregister.php"> Log In/ Register</a>
                    ';
                    
             }
