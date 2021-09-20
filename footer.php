@@ -29,25 +29,25 @@
             <ul>
                 <li>
                     <a href="#">
-                        <img src="../icons/facebook.svg" alt="">
+                        <img src="./icons/facebook.svg" alt="">
                         <span> Facebook </span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="../icons/instagram.svg" alt="">
+                        <img src="./icons/instagram.svg" alt="">
                         <span> Instagram </span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="../icons/twitter.svg" alt="">
+                        <img src="./icons/twitter.svg" alt="">
                         <span> Twitter </span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="../icons/google.svg" alt="">
+                        <img src="./icons/google.svg" alt="">
                         <span> Google </span>
                     </a>
                 </li>
@@ -114,7 +114,7 @@ footer .box {
   margin-right: 2rem;
   text-align: center;
 }
-footer .gallery img {
+/* footer .gallery img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -126,8 +126,8 @@ footer .gallery .navgal {
 }
 footer .gallery .navgal > div {
   width: calc(1 / 3 * 100% - (1-1 / 3) * 10px);
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; */
+/* } */
 footer .box ul {
   list-style: none;
 }
@@ -151,11 +151,11 @@ footer .box p {
 footer .box ul li {
   margin-bottom: 1rem;
 }
-footer .box:nth-child(3) > div {
+/* footer .box:nth-child(3) > div {
   display: flex;
   justify-content: center;
 }
-footer .box:nth-child(3) {
+/* footer .box:nth-child(3) {
   text-align: left;
 }
 footer .box:nth-child(3) h3 {
@@ -166,7 +166,7 @@ footer .box:nth-child(3) > div img {
 }
 footer .box:nth-child(3) ul li {
   margin-bottom: 1rem;
-}
+}  */ 
 
 footer.copyright {
   background-color: #363a40;

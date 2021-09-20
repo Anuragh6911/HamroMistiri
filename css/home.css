@@ -45,10 +45,12 @@ html {
 }
 
 #slider {
-  max-width: 1350px;
+  width: 100%;
+  height: auto;
   border: 2px solid rgb(53, 56, 57);
   margin: 0px auto;
 }
+
 #slider .left-slide,
 #slider .right-slide {
   position: absolute;
@@ -86,6 +88,8 @@ html {
   display: block;
 }
 
+/* slider responsive */
+
 /* Section 2 */
 #services {
   display: flex;
@@ -108,7 +112,7 @@ html {
 }
 .card {
   min-height: 100px;
-  width: 350px;
+  width: 30%;
   padding: 20px;
   border-radius: 5px;
   display: flex;
@@ -250,8 +254,7 @@ input[id="Email"] {
   padding: 100px 0px 0px 170px;
 }
 
-#about {
-  height: 1000px;
+.about-us {
 }
 
 #subscribe {

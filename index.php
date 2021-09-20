@@ -34,7 +34,7 @@ if(!isset($_SESSION['fullname'])){
     <section id="slider">
       <div class="slider-items">
         <div class="item active">
-          <img src="images/Slider6.png" alt="" />
+          <img src="images/slider1.png" alt="" />
         </div>
         <div class="item">
           <img src="images/Slider2.png" alt="" />
@@ -87,24 +87,7 @@ if(!isset($_SESSION['fullname'])){
         </div> 
 
       </div>
-      <!-- <ul>
-          <a href="./plumber.php"> Plumber </a>
-        </ul>
-        <ul>
-          <a href="./painter.php"> Painter </a>
-        </ul>
-        <ul>
-          <a href="./mechanics.php"> Mechanics </a>
-        </ul>
-        <ul>
-          <a href="./technician.php"> Technician </a>
-        </ul>
-        <ul>
-          <a href="./engineer.php"> Engineer </a>
-        </ul>
-        <ul>
-          <a href="./carpenter.php"> Carpenter </a>
-        </ul> -->
+      
     </section>
 
     <section id="section3">
@@ -175,7 +158,10 @@ if(!isset($_SESSION['fullname'])){
     </section>
 
      <section id="about">
-     </section>
+        <div class="about-us">
+        </div>
+        <div>
+      </section>
 
 
 
@@ -212,7 +198,7 @@ if(!isset($_SESSION['fullname'])){
               </div>
             </div>
             <div>
-              <img src="icons/bag-2.svg" alt="" />
+              <img src="icons/email.svg" alt="" />
               <div>
                 <span> Email </span>
                 <span> support@sabaikomistiri.com </span>
