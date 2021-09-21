@@ -20,6 +20,10 @@ if(!isset($_SESSION['fullname'])){
                 echo ' <div class="auth"> <img src="icons/user-icon.svg" alt=""> &nbsp';
 
                      echo $_SESSION['fullname'];
+
+                     echo '<a href="logout.php">Log Out Btn</a>';
+
+
                    
             }   
             
@@ -33,6 +37,7 @@ if(!isset($_SESSION['fullname'])){
                    
             }
             ?>
+           
              <!-- <img src="icons/edit.svg" alt="">
                     <a href="./loginregister.html"> Register Now </a> -->
 
