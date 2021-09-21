@@ -24,81 +24,31 @@ if(!isset($_SESSION['fullname'])){
       </script> 
     </head>
     <body>
-      <div id="header"> </div>
+    <div id="header"> </div>
         <h1 class="heading">Painter</h1>
         <div class="main">
-            <div class="card">
-                <div class="cardimg">
-                    <img src="./images/painter1.png" alt="Avatar"  >
-                </div>
-                 
-                 <div class="cardcontainer">
-                   <h4><b>Anurag Baskota</b></h4>
-                   <p>Software Engineer</p>
-                   <p> Co.Number:9823366694</p>
-                 </div>
-            </div>
-
-              <div class="card1">
-                <div class="cardimg1">
-                    <img src="./images/painter2.png" alt="Avatar">
-                </div>
-                
-                 <div class="cardcontainer1">
-                   <h4><b>Anurag Baskota</b></h4>
-                   <p>Software Engineer</p>
-                 </div>
-                 
-              </div>
-
-              <div class="card">
-                <div class="cardimg">
-                    <img src="./images/painter1.png" alt="Avatar">
-                </div>
-                 
-                 <div class="cardcontainer">
-                   <h4><b>Anurag Baskota</b></h4>
-                   <p>Software Engineer</p>
-                 </div>
-              </div>
-
-              <div class="card1">
-                <div class="cardimg1">
-                <img src="./images/painter2.png" alt="Avatar">
-            </div>
-                 <div class="cardcontainer1">
-                   <h4><b>Anurag Baskota</b></h4>
-                   <p>Software Engineer</p>
-                 </div>
-                 
-              </div>
-
-
-              <div class="card">
-                <div class="cardimg">
-                    <img src="./images/painter1.png" alt="Avatar">
-                </div>
-                 
-                 <div class="cardcontainer">
-                   <h4><b>Anurag Baskota</b></h4>
-                   <p>Software Engineer</p>
-                 </div>
-              </div>
-
-              <div class="card1">
-                <div class="cardimg1">
-                <img src="images/painter2.png" alt="Avatar">
-            </div>
-                 <div class="cardcontainer1">
-                   <h4><b>Anurag Baskota</b></h4>
-                   <p>Software Engineer</p>
-                 </div>
-                 
-              </div>
-              
-    
+        <?php 
+          include 'dbcon.php';
+          $sql = "SELECT * FROM `service` WHERE services='painter'";
+          $result = mysqli_query($con, $sql);
           
-
+          if (mysqli_num_rows($result) > 0) {
+            // output data of each row
+            while($row = mysqli_fetch_assoc($result)) {
+              echo ' <div class="card">
+              <div class="cardimg">
+                  <img src="./images/engineer1.png" alt="Avatar"  >
+              </div>
+               <div class="cardcontainer">
+                 <h4>'.  $row["fname"] .'</h4>
+                 <p>Painter</p>'. $row["phone"] .
+              ' </div>
+           </div>';
+            }
+          } else {
+            echo "0 results";
+          }          
+          ?>             
         </div>
         <div id="footer"> </div>
             </body>
