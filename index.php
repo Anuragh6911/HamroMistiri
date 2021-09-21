@@ -143,9 +143,8 @@ include 'dbcon.php';
                 <option value="Carpenter">Carpenter</option>
               </select>
 
-              <label for="PanNumber">ABOUT YOU</label>
-              <textarea id="w3review" name="aboutyou" rows="4" cols="50">
-              </textarea>
+              <label for="image">Image:</label>
+              <input value="Upload" type="file" name="panimage" id="panimage" />
 
               <input type="submit" value="SUBMIT"  name="submit2" />
             </form>
@@ -189,7 +188,7 @@ if ($con){
             $phone = mysqli_real_escape_string($con, $_POST['phone']);
             $pan = mysqli_real_escape_string($con, $_POST['pan']);
             $services = mysqli_real_escape_string($con, $_POST['services']);
-            $aboutyou = mysqli_real_escape_string($con, $_POST['aboutyou']);
+            $panimage = mysqli_real_escape_string($con, $_POST['panimage']);
 
            /* $emailquery = "SELECT * FROM `register` WHERE email_1 = '$email_1' ";
 					$query = mysqli_query($con,$emailquery);
@@ -204,7 +203,7 @@ if ($con){
                 <?php
 							*/
                 
-    $sql3 = "INSERT INTO `register` (`fname`, `email_1`,`phone`,`pan`,`service`,`aboutyou` ) VALUES ('$fname', '$email_1','$phone','$pan','$services','$aboutyou' )"; 
+    $sql3 = "INSERT INTO `service` (`fname`, `email_1`,`phone`,`pan`,`services`,`panimage` ) VALUES ('$fname', '$email_1','$phone','$pan','$services','$panimage' )"; 
 
 if ($con->query($sql3) === TRUE) {
   echo "New record created successfully";
@@ -228,10 +227,14 @@ $con->close();
       </div>
     </section>
 
-     <section id="about">
-        <div class="about-us">
+     <section id="section4">
+        <div class="container">
+            <div class="body1"><img src="./images/hamro.png"></div>
+            <div class="body2">
+            <div class="registername">KNOW US MORE</div>
+            <h1>About Us</h1>
+            </div>
         </div>
-        <div>
       </section>
 
 

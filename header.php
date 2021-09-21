@@ -47,7 +47,7 @@ if(!isset($_SESSION['fullname'])){
             <li> <a class="active" href="./index.php"> Home </a> </li>
             <li> <a href="./index.php#services"> Services </a> </li>
             <li> <a href="./index.php#section3"> Become a Professional </a> </li>
-            <li> <a href="./index.php#about"> About </a> </li>
+            <li> <a href="./index.php#section4"> About </a> </li>
             <li> <a href="./index.php#subscribe"> Subscribe  </a> </li>
             <li> <a href="./index.php#contact"> Contact </a> </li>
         </ul>

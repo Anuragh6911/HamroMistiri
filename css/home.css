@@ -162,7 +162,7 @@ html {
 
 /* Become a Professiona; */
 #section3 {
-  height: 750px;
+  height: 850px;
 }
 #section3 .MainForm {
   display: flex;
@@ -182,9 +182,8 @@ html {
 }
 
 #section3 input[id="PhoneNumber"],
-input[id="PanNumber"],
-select,
-textarea {
+input[id="PanNumber"],input[id="panimage"],
+select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -344,3 +343,40 @@ input[id="Email"] {
   font-weight: bold;
   margin-bottom: 0.25rem;
 }
+
+
+
+#section4 {
+  height: 850px;
+}
+#section4 .container {
+  display: flex;
+  height: 100%;
+}
+#section4 .body1 {
+  width: 80%;
+  height: 500px;
+  margin-left: -500px;
+  margin-top: 140px;
+}
+
+#section4 .body2 {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  height: 100%;
+  width:450%;
+  padding: 90px 0px 0px 40px;
+  margin-right: -70%;
+}
+#section4 .registername {
+  color: #ee9a25;
+  font-family: monospace;
+  font-size: larger;
+  font-weight: 200;
+}
+#section4 h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 2% 0% 5%;
+}
+
+
