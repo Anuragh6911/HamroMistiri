@@ -37,7 +37,7 @@ if(!isset($_SESSION['fullname'])){
             while($row = mysqli_fetch_assoc($result)) {
               echo ' <div class="card">
               <div class="cardimg">
-                  <img src="./images/engineer1.png" alt="Avatar"  >
+                  <img src="./images/plumber1.png" alt="Avatar"  >
               </div>
                <div class="cardcontainer">
                  <h4>'.  $row["fname"] .'</h4>
