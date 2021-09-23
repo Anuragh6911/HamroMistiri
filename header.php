@@ -95,7 +95,7 @@ if(!isset($_SESSION['fullname'])){
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1152x;
+    max-width: 1152px;
   }
 }
 

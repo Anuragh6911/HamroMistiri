@@ -29,14 +29,14 @@
       <div class="slider-items">
         <div class="item active">
 
-          <img src="images/slider1.png" alt="" />
+          <img src="images/final1.png" alt="" />
 
         </div>
         <div class="item">
-          <img src="images/Slider2.png" alt="" />
+          <img src="images/final2.png" alt="" />
         </div>
         <div class="item">
-          <img src="images/Slider3.png" alt="" />
+          <img src="images/final3.png" alt="" />
         </div>
       </div>
       <div class="left-slide"><</div>
@@ -104,15 +104,15 @@ include 'dbcon.php';
                 id="Fullname"
                 name="fname"
                 placeholder="Your Full Name"
-              />
+             required />
               </div>
               <div class="Emailclass">
               <input
-                type="text"
+                type="email"
                 id="Email"
                 name="email_1"
                 placeholder="Your Email"
-              />
+                required  />
               </div>
           </div>
     
@@ -123,7 +123,7 @@ include 'dbcon.php';
                 id="PhoneNumber"
                 name="phone"
                 placeholder="Enter Your Phone Number"
-              />
+                required />
   
               <label for="PanNumber">PAN-NUMBER</label>
               <input
@@ -131,7 +131,7 @@ include 'dbcon.php';
                 id="PanNumber"
                 name="pan"
                 placeholder="Enter Your Pan-Number"
-              />
+                required  />
 
               <label for="Services">SERVICES*</label>
               <select id="Services" name="services">
@@ -139,12 +139,16 @@ include 'dbcon.php';
                 <option value="Painter">Painter</option>
                 <option value="Mechanics">Mechanics</option>
                 <option value="Technician">Technician</option>
-                <option value="Mechanics">Engineer</option>
+                <option value="Engineer">Engineer</option>
                 <option value="Carpenter">Carpenter</option>
               </select>
 
               <label for="image">Image:</label>
-              <input value="Upload" type="file" name="panimage" id="panimage" />
+              <input value="Upload" type="file" name="panimage" id="panimage" required />
+
+              <label for="PanNumber">ABOUT YOU</label>
+              <textarea id="w3review" name="aboutyou" rows="4" cols="50">
+              </textarea>
 
               <input type="submit" value="SUBMIT"  name="submit2" />
             </form>
@@ -206,7 +210,7 @@ if ($con){
     $sql3 = "INSERT INTO `service` (`fname`, `email_1`,`phone`,`pan`,`services`,`panimage` ) VALUES ('$fname', '$email_1','$phone','$pan','$services','$panimage' )"; 
 
 if ($con->query($sql3) === TRUE) {
-  echo "New record created successfully";
+  // echo "New record created successfully";
 } else {
   echo "Error: " . $sql3 . "<br>" . $con->error;
 
@@ -232,7 +236,23 @@ $con->close();
             <div class="body1"><img src="./images/hamro.png"></div>
             <div class="body2">
             <div class="registername">KNOW US MORE</div>
-            <h1>About Us</h1>
+         <h1>About Us</h1>
+             <P> The home services system is in high demand as it is incredibly useful for everybody in this busy schedule lifestyle. ​‘Hamro Mistiri’ is a web application that will let users search for home services online . The services include Plumber, Mechanics, Electrician, Technician, etc. ​
+                It will provide freelancing opportunities for service providers. ​Home Service Providers and customers are only two users of our system. The home service providers are required to register to this website mentioning their roles. The users who are in need of services can browse the services provided and check the review of service providers. ​
+                   This web application will be beneficial to the individual especially for the ones who are relocating from one area to a different area.</br>
+                  </br>
+                   In a world which is filled with technical and digital advancement, it is sad to see that we ​
+                  people are still used to the old non-effective and traditional ways of finding the service ​providers. ​
+                  Whenever we are in need of a service we contact the service providers that we already know and that limits us to the only option. The main problem is that we don’t have any other service providers besides them and we have no choices or ways to get to them.​
+                  So to solve this very problem we are building a web application that allows the users to get a vast possible availability of those service providers through our web application. ​​
+              </P>
+          <h1>Why Hamro Mistiri ?</h1>
+           
+            <P>
+            During this pandemic many lost their job and those who were working abroad were forced to return to their country, this created increase in unemployment Rate. We a team of three members called as 'Three Motivated Minds' dicide to help those people who have skills but no employemnt opportunities. We create this web applicataion so that people having some skills of plumbing, painting etc. can find a way to earn their leaving by marketing their skills in our website.We believe in bringing smile in face's of thoes people who weren't able to even think about it.
+            </P>
+ 
+
             </div>
         </div>
       </section>
