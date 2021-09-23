@@ -21,7 +21,7 @@ if(!isset($_SESSION['fullname'])){
 
                      echo $_SESSION['fullname'];
 
-                     echo '<a href="logout.php">Log Out Btn</a>';
+                     echo ' <div class="logout"> <a href="logout.php"> Log Out </a> </div>';
 
 
                    
@@ -30,9 +30,10 @@ if(!isset($_SESSION['fullname'])){
             else{
                 echo ' 
            
-                <div>
+                <div class="login">
                     <img src="icons/user-icon.svg" alt="">
                     <a href="loginregister.php"> Log In/ Register</a>
+                </div>
                    ';
                    
             }
@@ -66,6 +67,17 @@ if(!isset($_SESSION['fullname'])){
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+.login a{
+  text-decoration: none;
+  color: #fefefe;
+}
+
+.logout a {
+  text-decoration: none;
+  padding: 0 25px;
+  color: #3d414a ;
 }
 
 .container {
