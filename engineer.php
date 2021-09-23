@@ -5,28 +5,27 @@ if(!isset($_SESSION['fullname'])){
  //   header ('location:loginregister.php');
 }
 ?>
-
 <html>
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script>
-            $(function() {
-              $('#header').load('./header.php');
-              $('#footer').load('./footer.php');
-            })
-        </script> 
-         
+    
         <link rel="stylesheet" href="./css/services.css"> 
         <title>
             Engineers
         </title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script>
+          $(function() {
+            $('#header').load('./header.php');
+            $('#footer').load('./footer.php');
+          })
+      </script> 
     </head>
     <body>
-    <div id="header"> </div>
-        <h1 class="heading">Engineer</h1>
+      <div id="header"> </div>
+        <h1 class="heading">Engineers</h1>
         <div class="main">
         <?php 
           include 'dbcon.php';
@@ -38,7 +37,7 @@ if(!isset($_SESSION['fullname'])){
             while($row = mysqli_fetch_assoc($result)) {
               echo ' <div class="card">
               <div class="cardimg">
-                  <img src="./images/engineer1.png" alt="Avatar"  >
+                  <img src="./images/engineer2.png" alt="Avatar"  >
               </div>
                <div class="cardcontainer">
                  <h4>'.  $row["fname"] .'</h4>
@@ -47,13 +46,12 @@ if(!isset($_SESSION['fullname'])){
            </div>';
             }
           } else {
-            echo "NO registreation till now";
+            echo "0 results";
           }          
           ?>             
            
 
         </div>
-     
         <div id="footer"> </div>
             </body>
 </html>

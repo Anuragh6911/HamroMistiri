@@ -19,7 +19,7 @@
   padding: 50px;
   box-shadow: 0 4px 8px 0 #363a40;
   transition: 0.3s;
-  background-color: #3d414a;
+  background-color: #fea72b;
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -40,10 +40,10 @@
 }
 
 .card1:hover img {
-  width: 8%;
+  width: 10%;
 }
 .card:hover img {
-  width: 16%;
+  width: 10%;
 }
 /* Add some padding inside the card container */
 .cardcontainer {
@@ -61,7 +61,7 @@
 .card1 img {
   margin-left: 1100px;
   border-radius: 5px 5px 0 0;
-  width: 3.5%;
+  width: 6%;
 }
 
 .cardimg1 {
@@ -85,6 +85,3 @@
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-/* .main{
-  height: 10000px;
-} */

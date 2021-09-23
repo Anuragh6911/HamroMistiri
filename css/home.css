@@ -183,7 +183,7 @@ html {
 
 #section3 input[id="PhoneNumber"],
 input[id="PanNumber"],input[id="panimage"],
-select {
+select, textarea  {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -251,9 +251,6 @@ input[id="Email"] {
 
 #section3 .Yellow {
   padding: 100px 0px 0px 170px;
-}
-
-.about-us {
 }
 
 #subscribe {
@@ -356,16 +353,17 @@ input[id="Email"] {
 #section4 .body1 {
   width: 80%;
   height: 500px;
-  margin-left: -500px;
+  margin-left: -320px;
   margin-top: 140px;
+  margin-right: -30%;
 }
 
 #section4 .body2 {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
   background-color: white;
   height: 100%;
-  width:450%;
-  padding: 90px 0px 0px 40px;
+  width:97.2%;
+  padding: 90px 60px 0px 40px;
   margin-right: -70%;
 }
 #section4 .registername {
@@ -376,7 +374,13 @@ input[id="Email"] {
 }
 #section4 h1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: 2% 0% 5%;
+  margin: 2% 0% 1.5%;
+}
+#section4 p {
+  color: #3d414a;
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 
