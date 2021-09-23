@@ -24,7 +24,7 @@ if(!isset($_SESSION['fullname'])){
       </script> 
     </head>
     <body>
-    <div id="header"> </div>
+      <div id="header"> </div>
         <h1 class="heading">Painter</h1>
         <div class="main">
         <?php 
@@ -37,7 +37,7 @@ if(!isset($_SESSION['fullname'])){
             while($row = mysqli_fetch_assoc($result)) {
               echo ' <div class="card">
               <div class="cardimg">
-                  <img src="./images/engineer1.png" alt="Avatar"  >
+                  <img src="./images/painter1.png" alt="Avatar"  >
               </div>
                <div class="cardcontainer">
                  <h4>'.  $row["fname"] .'</h4>
@@ -49,6 +49,8 @@ if(!isset($_SESSION['fullname'])){
             echo "0 results";
           }          
           ?>             
+           
+
         </div>
         <div id="footer"> </div>
             </body>

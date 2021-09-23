@@ -26,7 +26,7 @@ if(!isset($_SESSION['fullname'])){
     <body>
     <div id="header"> </div>
         <h1 class="heading">Carpenter</h1>
-        <div class="main">
+        <div class="maina">
         <?php 
           include 'dbcon.php';
           $sql = "SELECT * FROM `service` WHERE services='carpenter'";
@@ -37,11 +37,11 @@ if(!isset($_SESSION['fullname'])){
             while($row = mysqli_fetch_assoc($result)) {
               echo ' <div class="card">
               <div class="cardimg">
-                  <img src="./images/engineer1.png" alt="Avatar"  >
+                  <img src="./images/plumber2.png" alt="Avatar"  >
               </div>
                <div class="cardcontainer">
                  <h4>'.  $row["fname"] .'</h4>
-                 <p>carpenter</p>'. $row["phone"] .
+                 <p>Carpenter</p>'. $row["phone"] .
               ' </div>
            </div>';
             }
