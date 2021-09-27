@@ -151,7 +151,7 @@ if(!isset($_SESSION['fullname'])){
               <input value="Upload" type="file" name="panimage" id="panimage" required />
 
               <label for="PanNumber">ABOUT YOU</label>
-              <textarea id="w3review" name="aboutyou" rows="4" cols="50">
+              <textarea id="aboutyou" name="aboutyou" rows="4" cols="50">
               </textarea>
               <?php
 
@@ -231,11 +231,16 @@ if ($con){
             }
             else{
                 
+
           
-    $sql3 = "INSERT INTO `service` (`fname`, `email_1`,`phone`,`pan`,`services`,`panimage`, `aboutyou`) VALUES ('$fname', '$email_1','$phone','$pan','$services','$panimage','$aboutyou' )"; 
+  
+
+    $sql3 = "INSERT INTO `service` (`fname`, `email_1`,`phone`,`pan`,`services`,`panimage`,`aboutyou` ) VALUES ('$fname', '$email_1','$phone','$pan','$services','$panimage','$aboutyou')"; 
+
+
 
 if ($con->query($sql3) === TRUE) {
-  // echo "New record created successfully";
+   echo "You have been registered successfully";
 } else {
   echo "Error: " . $sql3 . "<br>" . $con->error;
 
@@ -275,7 +280,7 @@ $con->close();
           <h1>Why Hamro Mistiri ?</h1>
            
             <P>
-            During this pandemic many lost their job and those who were working abroad were forced to return to their country, this created increase in unemployment Rate. We a team of three members called as 'Three Motivated Minds' dicide to help those people who have skills but no employemnt opportunities. We create this web applicataion so that people having some skills of plumbing, painting etc. can find a way to earn their leaving by marketing their skills in our website.We believe in bringing smile in face's of thoes people who weren't able to even think about it.
+            During this pandemic, many lost their job and those who were working abroad were forced to return to their country, this created increase in the unemployment rate. We a team of three members called 'Three Motivated Minds' decided to help those people who have skills but no employment opportunities. We create this web application so that people having some skills in plumbing, painting, etc. can find a way to earn their leaving by marketing their skills on our website. We believe in bringing smiles to the faces of those people who weren't able to even think about it.
             </P>
  
 
@@ -293,10 +298,7 @@ $con->close();
         <div>
           <h1>Subscribe to your newsletter</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo
-            dicta, eligendi, ad veniam totam fuga repellendus provident ipsam
-            sint harum ducimus corporis, architecto atque. Tempore beatae
-            delectus perferendis magni totam?
+          Subscribe us to be the part of our Hamro Mistiri Family. We will keep on updating you about latest news, offers and lots of things. You are just a few minutes away from being part of something great. Don't miss this opportunity.
           </p>
           <div class="input-sec4">
             <input type="email" placeholder="email@sabaikomistiri.com" />

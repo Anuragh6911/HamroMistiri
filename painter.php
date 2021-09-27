@@ -13,7 +13,7 @@ if(!isset($_SESSION['fullname'])){
     
         <link rel="stylesheet" href="./css/services.css"> 
         <title>
-            Engineers
+            Painter
         </title>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script>
@@ -43,6 +43,7 @@ if(!isset($_SESSION['fullname'])){
                  <h4>'.  $row["fname"] .'</h4>
                  <p>Painter</p>'. $row["phone"] .
               ' </div>
+              <p>'.$row["aboutyou"].'</p>
            </div>';
             }
           } else {
