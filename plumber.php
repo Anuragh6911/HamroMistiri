@@ -35,7 +35,7 @@ if(!isset($_SESSION['fullname'])){
           if (mysqli_num_rows($result) > 0) {
             // output data of each row
             while($row = mysqli_fetch_assoc($result)) {
-              echo ' <div class="card1">
+              echo ' <div class="card">
               <div class="cardimg">
                   <img src="./images/plumber1.png" alt="Avatar"  >
               </div>
@@ -43,6 +43,7 @@ if(!isset($_SESSION['fullname'])){
                  <h4>'.  $row["fname"] .'</h4>
                  <p>Plumber</p>'. $row["phone"] .
               ' </div>
+              <p>' .$row["aboutyou"]. '</p>
            </div>';
             }
           } else {

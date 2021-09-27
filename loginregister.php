@@ -80,7 +80,7 @@ if(isset($_POST['submit1'])){
 
 								 <div class="email"> 
                                      
-									<input type="text" class="input" placeholder="Email" size="30" name="email1" required>
+									<input type="email" class="input" placeholder="Email" size="30" name="email1" required>
 								 </div>
 								 <div class="password">
                                    
@@ -174,7 +174,7 @@ if(isset($_POST['submit1'])){
 								 </div>
                                  <div class="email"> 
                                      
-									<input type="text" class="input" placeholder="Email" size="30" name="email" required>
+									<input type="email" class="input" placeholder="Email" size="30" name="email" required>
 								 </div>
 								 <div class="repassword">
 									<input type="text" class="input" placeholder="Contact-Number" size="30" name= "contact" required>  

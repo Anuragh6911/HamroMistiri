@@ -43,6 +43,7 @@ if(!isset($_SESSION['fullname'])){
                  <h4>'.  $row["fname"] .'</h4>
                  <p>Engineer</p>'. $row["phone"] .
               ' </div>
+              <p>' .$row["aboutyou"]. '</p>
            </div>';
             }
           } else {

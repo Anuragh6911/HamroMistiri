@@ -147,7 +147,7 @@ include 'dbcon.php';
               <input value="Upload" type="file" name="panimage" id="panimage" required />
 
               <label for="PanNumber">ABOUT YOU</label>
-              <textarea id="w3review" name="aboutyou" rows="4" cols="50">
+              <textarea id="aboutyou" name="aboutyou" rows="4" cols="50">
               </textarea>
 
               <input type="submit" value="SUBMIT"  name="submit2" />
@@ -193,6 +193,7 @@ if ($con){
             $pan = mysqli_real_escape_string($con, $_POST['pan']);
             $services = mysqli_real_escape_string($con, $_POST['services']);
             $panimage = mysqli_real_escape_string($con, $_POST['panimage']);
+            $aboutyou = mysqli_real_escape_string($con, $_POST['aboutyou']);
 
            /* $emailquery = "SELECT * FROM `register` WHERE email_1 = '$email_1' ";
 					$query = mysqli_query($con,$emailquery);
@@ -207,7 +208,7 @@ if ($con){
                 <?php
 							*/
                 
-    $sql3 = "INSERT INTO `service` (`fname`, `email_1`,`phone`,`pan`,`services`,`panimage` ) VALUES ('$fname', '$email_1','$phone','$pan','$services','$panimage' )"; 
+    $sql3 = "INSERT INTO `service` (`fname`, `email_1`,`phone`,`pan`,`services`,`panimage`,`aboutyou` ) VALUES ('$fname', '$email_1','$phone','$pan','$services','$panimage','$aboutyou')"; 
 
 if ($con->query($sql3) === TRUE) {
   // echo "New record created successfully";
