@@ -3,7 +3,7 @@
     <div class="container">
         <div class="box">
             <h3> About Us </h3>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p> The home services system is in high demand as it is incredibly useful... </p>
             <button > Read More </button>
         </div>
         <div class="box">
@@ -79,7 +79,7 @@
 </footer>
 <footer class="copyright">
     <div>
-        Copyright © 2020 Sabaiko Mistiri | Developed by <a href="#"> Three Motivated Minds Pvt. Ltd. </a>
+        Copyright © 2020 Hamro Mistiri | Developed by <a href="#"> Three Motivated Minds Pvt. Ltd. </a>
     </div>
 </footer>
 <style>
