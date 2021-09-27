@@ -80,6 +80,10 @@ if(!isset($_SESSION['fullname'])){
   color: #3d414a ;
 }
 
+/* .logout a:hover {
+  color: #fea72b;
+} */
+
 .container {
   width: 100%;
   padding: 0 25px;

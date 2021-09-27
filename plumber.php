@@ -13,7 +13,7 @@ if(!isset($_SESSION['fullname'])){
     
         <link rel="stylesheet" href="./css/services.css"> 
         <title>
-            Engineers
+            Plumber
         </title>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script>
@@ -25,7 +25,7 @@ if(!isset($_SESSION['fullname'])){
     </head>
     <body>
     <div id="header"> </div>
-        <h1 class="heading">Mechanics</h1>
+        <h1 class="heading">Plumber</h1>
         <div class="maina">
         <?php 
           include 'dbcon.php';
@@ -37,7 +37,7 @@ if(!isset($_SESSION['fullname'])){
             while($row = mysqli_fetch_assoc($result)) {
               echo ' <div class="card1">
               <div class="cardimg">
-                  <img src="./images/plumber1.png" alt="Avatar"  >
+                  <img src="./images/plumber2.png" alt="Avatar"  >
               </div>
                <div class="cardcontainer">
                  <h4>'.  $row["fname"] .'</h4>
