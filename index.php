@@ -151,7 +151,7 @@ if(!isset($_SESSION['fullname'])){
               <input value="Upload" type="file" name="panimage" id="panimage" required />
 
               <label for="PanNumber">ABOUT YOU</label>
-              <textarea id="w3review" name="aboutyou" rows="4" cols="50">
+              <textarea id="aboutyou" name="aboutyou" rows="4" cols="50">
               </textarea>
               <?php
 
@@ -229,7 +229,9 @@ if ($con){
                 <?php
 							*/
                 
-    $sql3 = "INSERT INTO `service` (`fname`, `email_1`,`phone`,`pan`,`services`,`panimage`, `aboutyou`) VALUES ('$fname', '$email_1','$phone','$pan','$services','$panimage','$aboutyou' )"; 
+
+    $sql3 = "INSERT INTO `service` (`fname`, `email_1`,`phone`,`pan`,`services`,`panimage`,`aboutyou` ) VALUES ('$fname', '$email_1','$phone','$pan','$services','$panimage','$aboutyou')"; 
+
 
 if ($con->query($sql3) === TRUE) {
    echo "You have been registered successfully";
