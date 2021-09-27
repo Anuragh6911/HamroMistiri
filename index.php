@@ -295,17 +295,14 @@ $con->close();
         <div>
           <img src="./images/craftsmen.png" alt="" height="280px" />
         </div>
-        <div>
-          <h1>Subscribe to your newsletter</h1>
+        <div class="righttxt">
+          <h1>Become a part of Hamro Mistiri Family</h1>
           <p>
-          Subscribe us to be the part of our Hamro Mistiri Family. We will keep on updating you about latest news, offers and lots of things. You are just a few minutes away from being part of something great. Don't miss this opportunity.
+          You can be a part of our Hamro Mistiri Family. We will keep on updating you about latest news, offers and lots of things. You are just a few minutes away from being part of something great. Don't miss this opportunity.
           </p>
-          <div class="input-sec4">
-            <input type="email" placeholder="email@sabaikomistiri.com" />
-            <button>Subscribe</button>
-          </div>
         </div>
       </div>
+
     </section>
     <section id="contact">
       <div class="contact-info-wrapper">
@@ -314,21 +311,21 @@ $con->close();
           <div>
             <div>
               <img src="icons/phone-2.svg" alt="" />
-              <div>
+              <div class="inner">
                 <span> Call us: </span>
                 <span> (+971) 9860123456 </span>
               </div>
             </div>
             <div>
               <img src="icons/email.svg" alt="" />
-              <div>
+              <div class="inner">
                 <span> Email </span>
                 <span> support@sabaikomistiri.com </span>
               </div>
             </div>
             <div>
               <img src="icons/clock-2.svg" alt="" />
-              <div>
+              <div class="inner">
                 <span> Working Hours: </span>
                 <span> Sun-Fri (10:00am-5:00pm) </span>
               </div>

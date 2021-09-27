@@ -182,8 +182,10 @@ html {
 }
 
 #section3 input[id="PhoneNumber"],
-input[id="PanNumber"],input[id="panimage"],
-select, textarea  {
+input[id="PanNumber"],
+input[id="panimage"],
+select,
+textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -262,6 +264,10 @@ input[id="Email"] {
 #subscribe .container {
   display: flex;
 }
+
+.righttxt {
+  margin-top: 70px;
+}
 #subscribe h1 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
@@ -271,35 +277,8 @@ input[id="Email"] {
   margin-bottom: 1.5rem;
   line-height: 1.5;
 }
-#subscribe .input-sec4 {
-  background: #fefefe;
-  display: flex;
-  padding: 0.3rem;
-  border-radius: 4px;
-}
-#subscribe .input-sec4 input {
-  width: 100%;
-  border: none;
-  padding: 0 1rem;
-  font-size: 1rem;
-}
-#subscribe .input-sec4 button {
-  padding: 0.8rem 2rem;
-  border: none;
-  background: #ee9a25;
-  color: #fefefe;
-  border-radius: 4px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  outline: none;
-}
-#subscribe .input-sec4 button:hover {
-  background: #353839;
-}
-#subscribe .input-sec4 input:focus {
-  outline: none;
-}
+
+/* contact section */
 
 #contact {
   display: flex;
@@ -331,17 +310,15 @@ input[id="Email"] {
 #contact .contact-info > div img {
   margin-right: 1rem;
 }
-#contact .contact-info > div > div > div {
+#contact .inner {
   display: flex;
   flex-direction: column;
 }
-#contact .contact-info > div > div > div span:first-child {
+#contact .inner :first-child {
   /* font-family: ; */
   font-weight: bold;
   margin-bottom: 0.25rem;
 }
-
-
 
 #section4 {
   height: 850px;
@@ -362,7 +339,7 @@ input[id="Email"] {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
   background-color: white;
   height: 100%;
-  width:97.2%;
+  width: 97.2%;
   padding: 90px 60px 0px 40px;
   margin-right: -70%;
 }
@@ -382,5 +359,3 @@ input[id="Email"] {
   font-size: 18px;
   font-weight: 500;
 }
-
-
