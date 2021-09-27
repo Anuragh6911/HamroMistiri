@@ -1,19 +1,19 @@
 <?php
 session_start();
-
-
 ?>
 
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>service finder</title>
 	<link rel="stylesheet" type="text/css" href="./css/loginregister.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<meta name="viewport" content="width=device-width", initial-scale="1">
+	<meta name="viewport" content="width=device-width" , initial-scale="1">
 </head>
+
 <body>
-<?php
+	<?php
  
 include 'dbcon.php';
 
@@ -40,24 +40,24 @@ if(isset($_POST['submit1'])){
         if($pass_decode){
            // echo"login successful";
             ?>
-            <script>
-                location.replace("index.php");
-            </script>
+	<script>
+		location.replace("index.php");
+	</script>
 
-            <?php
+	<?php
         }else{
             ?>
-            <script>
-                alert("Password wrong");
-                </script>
-            <?php
+	<script>
+		alert("Password wrong");
+	</script>
+	<?php
         }
         }else{
             ?>
-            <script>
-                alert("invalid mail ");
-                </script>
-            <?php
+	<script>
+		alert("invalid mail ");
+	</script>
+	<?php
         }
 
     
@@ -68,40 +68,40 @@ if(isset($_POST['submit1'])){
 
 
 	<button class="btnhome"> <a href="./index.php"> <i class="fa fa-home" href=""></i> Home </a></button>
-	<div class="parent"> 
-		        <div class="child">
-					<div class="child2">
-						<div>
-							<img src="./images/avatar.svg" class="img">
-						</div>
-				          <div class="child3">
-                            <form class="Login-Form" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
-								<h2 class="title">Login</h2>
+	<div class="parent">
+		<div class="child">
+			<div class="child2">
+				<div>
+					<img src="./images/avatar.svg" class="img">
+				</div>
+				<div class="child3">
+					<form class="Login-Form" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
+						<h2 class="title">Login</h2>
 
-								 <div class="email"> 
-                                     
-									<input type="email" class="input" placeholder="Email" size="30" name="email1" required>
-								 </div>
-								 <div class="password">
-                                   
-									<input type="password" class="input" placeholder="Password" size="30" name="pass1" required>  
-								 </div>
-								 
-								<div class="ff">
-									<a href="#" class="forget"></a><br>
-								</div>	
-								
-								 <div class="btnn">
-									<input type="submit" name="submit1" class="btn" value="Login">		
-								 </div>
-                                 <div class="message"> Not Register?
-                                    <a href="#" onclick="showHide()">Register</a>
-                                </div>
-                                 	
-                            </form>        
-                          </div>                      
-					</div>
-                    <?php
+						<div class="email">
+
+							<input type="email" class="input" placeholder="Email" size="30" name="email1" required>
+						</div>
+						<div class="password">
+
+							<input type="password" class="input" placeholder="Password" size="30" name="pass1" required>
+						</div>
+
+						<div class="ff">
+							<a href="#" class="forget"></a><br>
+						</div>
+
+						<div class="btnn">
+							<input type="submit" name="submit1" class="btn" value="Login">
+						</div>
+						<div class="message"> Not Register?
+							<a href="#" onclick="showHide()">Register</a>
+						</div>
+
+					</form>
+				</div>
+			</div>
+			<?php
 					
 					//include 'dbcon.php';
 					if(isset($_POST['submit'])){
@@ -121,10 +121,10 @@ if(isset($_POST['submit1'])){
 
 						if($emailcount>0){
 							?>
-								<script>
-								alert("email exists");
-								</script>
-								<?php
+			<script>
+				alert("email exists");
+			</script>
+			<?php
 							
 
 						}else{
@@ -135,24 +135,24 @@ if(isset($_POST['submit1'])){
 
 							if($iquery){
 								?>
-								<script>
-								alert("inserted");
-								</script>
-								<?php
+			<script>
+				alert("inserted");
+			</script>
+			<?php
 							}else{
 								?>
-								<script>
-								alert("not inserted");
-								</script>
-								<?php
+			<script>
+				alert("not inserted");
+			</script>
+			<?php
 							}
 	
 							}else{
 								?>
-								<script>
-								alert("password does not match");
-								</script>
-								<?php
+			<script>
+				alert("password does not match");
+			</script>
+			<?php
 								
 							}
 						}
@@ -162,90 +162,58 @@ if(isset($_POST['submit1'])){
 					
 					
 					?>
-                    
-                   
-				          <div class="child3">
-                            <form class="Register-Form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-								<h2 class="title">Register</h2>
 
-								 <div class="user"> 
-                                     
-									<input type="text" class="input" placeholder="Full Name" size="30" name="fullname" required>
-								 </div>
-                                 <div class="email"> 
-                                     
-									<input type="email" class="input" placeholder="Email" size="30" name="email" required>
-								 </div>
-								 <div class="repassword">
-									<input type="text" class="input" placeholder="Contact-Number" size="30" name= "contact" required>  
-								 </div>
-								 <div class="password">
-                                   
-									<input type="password" class="input" placeholder="Password" size="30" name="pass" required>  
-								 </div>
-                                 <div class="repassword">
-									<input type="password" class="input" placeholder="ReEnter-Password" size="30" name= "repass" required>  
-								 </div>
-								 
-								 
-								 <div class="btnn">
-									<input type="submit" name="submit" class="btn1"  value="Register">		
-								 </div>
-									
-                                 <div class="message"> Already Register?
-                                    <a href="#" onclick="showHide()"> Login</a>
-                                </div>
-                               
-                            </form>        
-                            </div>  
-                                   
-		        </div>
-				
-     </div> 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js "></script>
 
-    <script>
-         $('.message a').click(function(){
-     $('form').animate({height:"toggle",opacity:"toggle"},"medium");
- })
-    </script>
+			<div class="child3">
+				<form class="Register-Form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+					<h2 class="title">Register</h2>
+
+					<div class="user">
+
+						<input type="text" class="input" placeholder="Full Name" size="30" name="fullname" required>
+					</div>
+					<div class="email">
+
+						<input type="email" class="input" placeholder="Email" size="30" name="email" required>
+					</div>
+					<div class="repassword">
+						<input type="text" class="input" placeholder="Contact-Number" size="30" name="contact" required>
+					</div>
+					<div class="password">
+
+						<input type="password" class="input" placeholder="Password" size="30" name="pass" required>
+					</div>
+					<div class="repassword">
+						<input type="password" class="input" placeholder="ReEnter-Password" size="30" name="repass"
+							required>
+					</div>
+
+
+					<div class="btnn">
+						<input type="submit" name="submit" class="btn1" value="Register">
+					</div>
+
+					<div class="message"> Already Register?
+						<a href="#" onclick="showHide()"> Login</a>
+					</div>
+
+				</form>
+			</div>
+
+		</div>
+
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js "></script>
+
+	<script>
+		$('.message a').click(function () {
+			$('form').animate({
+				height: "toggle",
+				opacity: "toggle"
+			}, "medium");
+		})
+	</script>
 	<script type="text/javascript" src="./js/loginregister.js"></script>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

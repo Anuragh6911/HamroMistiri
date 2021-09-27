@@ -13,7 +13,7 @@ if(!isset($_SESSION['fullname'])){
     
         <link rel="stylesheet" href="./css/services.css"> 
         <title>
-            Plumber
+            Engineers
         </title>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script>
@@ -37,13 +37,13 @@ if(!isset($_SESSION['fullname'])){
             while($row = mysqli_fetch_assoc($result)) {
               echo ' <div class="card">
               <div class="cardimg">
-                  <img src="./images/plumber2.png" alt="Avatar"  >
+                  <img src="./images/plumber1.png" alt="Avatar"  >
               </div>
                <div class="cardcontainer">
                  <h4>'.  $row["fname"] .'</h4>
                  <p>Plumber</p>'. $row["phone"] .
               ' </div>
-              <p>' .$row["aboutyou"]. '</p>
+              <p class="aboutyou">' .$row["aboutyou"]. '</p>
            </div>';
             }
           } else {
@@ -54,5 +54,5 @@ if(!isset($_SESSION['fullname'])){
 
         </div>
         <div id="footer"> </div>
-            </body>
+            </body> 
 </html>
