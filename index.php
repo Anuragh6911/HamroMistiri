@@ -1,4 +1,10 @@
-
+<?php
+session_start();
+if(!isset($_SESSION['fullname'])){
+  //   header ('location:loginregister.php');
+ }
+ 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -85,9 +91,7 @@
       </div>
       
     </section>
-<?php
-include 'dbcon.php';
-?>
+
     <section id="section3">
       <div class="MainForm">
         <div class="Form">
@@ -133,7 +137,7 @@ include 'dbcon.php';
                 placeholder="Enter Your Pan-Number"
                 required  />
 
-              <label for="Services">SERVICES*</label>
+              <label for="Services">SERVICES</label>
               <select id="Services" name="services">
                 <option value="Plumber">Plumber</option>
                 <option value="Painter">Painter</option>
@@ -149,8 +153,25 @@ include 'dbcon.php';
               <label for="PanNumber">ABOUT YOU</label>
               <textarea id="w3review" name="aboutyou" rows="4" cols="50">
               </textarea>
+              <?php
 
-              <input type="submit" value="SUBMIT"  name="submit2" />
+
+              if(isset($_SESSION['fullname'])){
+
+                echo '<input type="submit" value="SUBMIT"  name="submit2" />';
+              }
+              else
+              {
+                ;
+                echo '<input type="submit" value="login first"  name="submit2"  />';
+
+              }
+            
+
+
+
+                ?>
+              
             </form>
 
           
@@ -193,6 +214,7 @@ if ($con){
             $pan = mysqli_real_escape_string($con, $_POST['pan']);
             $services = mysqli_real_escape_string($con, $_POST['services']);
             $panimage = mysqli_real_escape_string($con, $_POST['panimage']);
+            $aboutyou = mysqli_real_escape_string($con, $_POST['aboutyou']);
 
            /* $emailquery = "SELECT * FROM `register` WHERE email_1 = '$email_1' ";
 					$query = mysqli_query($con,$emailquery);
@@ -207,7 +229,7 @@ if ($con){
                 <?php
 							*/
                 
-    $sql3 = "INSERT INTO `service` (`fname`, `email_1`,`phone`,`pan`,`services`,`panimage` ) VALUES ('$fname', '$email_1','$phone','$pan','$services','$panimage' )"; 
+    $sql3 = "INSERT INTO `service` (`fname`, `email_1`,`phone`,`pan`,`services`,`panimage`, `aboutyou`) VALUES ('$fname', '$email_1','$phone','$pan','$services','$panimage','$aboutyou' )"; 
 
 if ($con->query($sql3) === TRUE) {
   // echo "New record created successfully";
