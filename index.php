@@ -162,8 +162,9 @@ if(!isset($_SESSION['fullname'])){
               }
               else
               {
-                ;
-                echo '<input type="submit" value="login first"  name="submit2"  />';
+                
+                echo '<input type="submit" value="login first"  name=" "  />';
+                
 
               }
             
@@ -215,22 +216,27 @@ if ($con){
             $services = mysqli_real_escape_string($con, $_POST['services']);
             $panimage = mysqli_real_escape_string($con, $_POST['panimage']);
             $aboutyou = mysqli_real_escape_string($con, $_POST['aboutyou']);
-
-           /* $emailquery = "SELECT * FROM `register` WHERE email_1 = '$email_1' ";
-					$query = mysqli_query($con,$emailquery);
+	 $emailquery1 = "SELECT * FROM `service` WHERE email_1 = '$email_1' ";
+					$query2 = mysqli_query($con,$emailquery1);
 						
-						$emailcount = mysqli_num_rows($query);
+						$emailcount1 = mysqli_num_rows($query2);
+          
 
-						if($emailcount>0){
+					if($emailcount1>0){
 						?>
 								<script>
-								alert("email exists");
+								alert("Email exists!");
 								</script>
                 <?php
-							*/
+            }
+            else{
                 
 
+          
+  
+
     $sql3 = "INSERT INTO `service` (`fname`, `email_1`,`phone`,`pan`,`services`,`panimage`,`aboutyou` ) VALUES ('$fname', '$email_1','$phone','$pan','$services','$panimage','$aboutyou')"; 
+
 
 
 if ($con->query($sql3) === TRUE) {
@@ -240,11 +246,12 @@ if ($con->query($sql3) === TRUE) {
 
             
 }
-            
+}
+          
  
 $con->close();
-          }
           
+}
         
 ?>
 
