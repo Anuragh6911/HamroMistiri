@@ -10,21 +10,6 @@
   align-items: center;
   height: 100px;
 }
-.card1 {
-  /* Add shadows to create the "card" effect */
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  margin: 40px;
-  padding: 50px;
-  box-shadow: 0 4px 8px 0 #363a40;
-  transition: 0.3s;
-  background-color: #fea72b;
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-  height: 100px;
-}
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
@@ -33,18 +18,10 @@
   height: 200px;
 }
 
-.card1:hover {
-  box-shadow: 0 20px 30px 0 rgba(20, 20, 20, 0.2);
-  background-color: #e7e6e4;
-  height: 200px;
-}
-
-.card1:hover img {
-  width: 10%;
-}
 .card:hover img {
   width: 10%;
 }
+
 /* Add some padding inside the card container */
 .cardcontainer {
   margin-left: 200px;
@@ -64,24 +41,9 @@
   width: 6%;
 }
 
-.cardimg1 {
-  /* background-color: aqua; */
-  margin-left: 00px;
-}
-/* .cardimg1 {
-      margin-left: px;
-      padding-left: 500px;
-      border-radius: 5px 5px 0 0;
-      } */
-.cardcontainer1 {
-  padding-left: 00px;
-  width: 300px;
-}
-
 .heading {
   padding-top: 10px;
   text-align: center;
   color: #3d414a;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-
